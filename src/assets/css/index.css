@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+
+    /* Colors */
+    /* Brand Colours */
+    --brand-color: #00D2DF;
+
+    /* Dark Scale */
+    --dark-10: #121212;
+    --dark-20: #151515;
+    --dark-30: #C4C4C4;
+    --white: #FFFFFF;
+
+    /* Color System */
+    --support-01: #2962FF;
+    --support-02: #0BB07B;
+    --support-03: #FFCE52;
+    --support-04: #F03D3D;
+    --support-05: #E0E0E0;
+
+    --button-linkedin-gradient: linear-gradient(to right, #9358F7, #10D7E2);
+    --button-github-gradient: linear-gradient(to right, #D24074, #6518B4);
+
+    /* https://uicolors.app/create */
+    --robins-egg-blue-100: #ceffff;
+    --robins-egg-blue-50: #ebfffe;
+    --robins-egg-blue-200: #a2fdff;
+    --robins-egg-blue-300: #63f8fd;
+    --robins-egg-blue-400: #1ceaf4;
+    --robins-egg-blue-500: #00d2df;
+    --robins-egg-blue-600: #03a4b7;
+    --robins-egg-blue-700: #0a8294;
+    --robins-egg-blue-800: #126878;
+    --robins-egg-blue-900: #145665;
+    --robins-egg-blue-950: #063a46;
+
+
+}
+
+button {
+    cursor: pointer;
+    all: unset;
+}
+
+body {
+    font-size: 1.6rem;
+    background-color: var(--dark-20);
+    color: var(--white);
+}

@@ -1,0 +1,155 @@
+.wrapper-hero {
+    display: grid;
+    grid-template-columns: .6fr 1fr;
+    height: 60vh;
+    width: 100%;
+    padding: 2.5rem 0 2.5rem 12rem;
+
+    align-items: center;
+}
+
+.wrapper-apresentation {
+    text-transform: uppercase;
+    font-style: uppercase;
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+
+.my-name {
+    font-size: 6.4rem;
+    color: var(--brand-color);
+}
+
+
+.apresentation-buttos-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.buttons-contact {
+    display: flex;
+    gap: 2.4rem;
+}
+
+.buttons-contact button {
+    padding: 1rem 2rem;
+}
+
+.buttons-contact button:hover {
+    color: black;
+    background-color: var(--robins-egg-blue-200);
+}
+
+.buttons-contact button a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--white);
+    
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.button-linkedin {
+    border: 1.778px solid transparent;
+    border-image: var(--button-linkedin-gradient) 1;
+}
+
+.button-github {
+    border: 1.778px solid transparent;
+    border-image: var(--button-github-gradient) 1;
+}
+
+.container-ilustration {
+    height: 50rem;
+    background: url(../../assets/img/looper-bg.svg) no-repeat center;
+    background-size: cover;
+}
+
+@media (max-width: 480px) {
+    .wrapper-hero {
+        display: flex;
+        padding: 2.4rem;
+    }
+
+    .wrapper-apresentation {
+        font-size: 1.6rem;
+    }
+
+    .my-name {
+        font-size: 3.2rem;
+    }
+
+    .wrapper-hero {
+        display: flex;
+        justify-content: center;
+        padding: 2.6rem;
+    }
+
+    .apresentation-buttos-contact {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrapper-apresentation {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .container-ilustration {
+        display: none;
+    }
+
+    .buttons-contact {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .wrapper-hero {
+        display: flex;
+        justify-content: center;
+        padding: 2.6rem;
+    }
+
+    .apresentation-buttos-contact {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrapper-apresentation {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .my-name {
+        font-size: 5.5rem;
+    }
+
+    .container-ilustration {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .wrapper-hero {
+        grid-template-columns: 1fr .9fr;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .wrapper-hero {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+    .wrapper-hero {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1920px) {
+    /* Estilos para telas maiores ou iguais a 1920px */
+}
