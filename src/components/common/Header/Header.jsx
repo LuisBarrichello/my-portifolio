@@ -33,7 +33,7 @@ function Header() {
                             <li>Home</li>
                         </Link>
                         <Link 
-                            to="about" 
+                            to="about-me" 
                             spy={true} 
                             smooth={true} 
                             offset={-70} 
@@ -42,7 +42,7 @@ function Header() {
                             <li>Sobre mim</li>
                         </Link>
                         <Link 
-                            to="experience" 
+                            to='experience'
                             spy={true} 
                             smooth={true} 
                             offset={-70} 

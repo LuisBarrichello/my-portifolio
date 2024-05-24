@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import Button from "../common/Buttons/Button"
 
 import IconLinkedin from "../../assets/img/linkedin.svg"
 import IconGithub from "../../assets/img/github.svg"
@@ -11,25 +11,29 @@ function Hero() {
                 <div className="wrapper-apresentation">
                     <p className="description-apresentation">Olá, eu sou</p>
                     <span className="my-name">Luís Gabriel</span>
-                    <p className="description-apresentation">Desenvolvedor Front End</p>
+                    <p className="description-apresentation">Software Engineer</p>
                 </div>
                 <div className="buttons-contact">
-                    <button className="button-linkedin">
-                        <Link>
-                            <img src={IconLinkedin} alt="" />
-                            <span>LinkedIn</span>
-                        </Link>
-                    </button>
-                    <button className="button-github">
-                        <Link>
-                            <img src={IconGithub} alt="" />
-                            <span>Github</span>
-                        </Link>
-                    </button>
+                    <Button 
+                        className={'button-gradient-purple-blue'} 
+                        content={'Linkedin'} 
+                        srcImage={IconLinkedin} 
+                        altImage={'icon Linkdin'} 
+                        pathLink={'https://www.linkedin.com/in/luisgabrielbarrichello'}
+                        target={'target'}
+                    ></Button>
+                    <Button 
+                        className={'button-gradient-red-purple'} 
+                        content={'Github'} 
+                        srcImage={IconGithub} 
+                        altImage={'icon Github'} 
+                        pathLink={'https://github.com/LuisBarrichello'}
+                        target={'target'}
+                    ></Button>
                 </div>
             </div>
             <div className="container-ilustration">
-
+                {/* Ilustration here */}
             </div>
         </section>
     )

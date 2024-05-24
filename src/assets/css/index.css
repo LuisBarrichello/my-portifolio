@@ -18,6 +18,7 @@
     --dark-10: #121212;
     --dark-20: #151515;
     --dark-30: #C4C4C4;
+    --gray: #222;
     --white: #FFFFFF;
 
     /* Color System */
@@ -27,8 +28,8 @@
     --support-04: #F03D3D;
     --support-05: #E0E0E0;
 
-    --button-linkedin-gradient: linear-gradient(to right, #9358F7, #10D7E2);
-    --button-github-gradient: linear-gradient(to right, #D24074, #6518B4);
+    --button-purple-blue-gradient: linear-gradient(to right, #9358F7, #10D7E2);
+    --button-red-purple-gradient: linear-gradient(to right, #D24074, #6518B4);
 
     /* https://uicolors.app/create */
     --robins-egg-blue-100: #ceffff;
@@ -43,7 +44,13 @@
     --robins-egg-blue-900: #145665;
     --robins-egg-blue-950: #063a46;
 
+    --padding-desktop: 4rem 12rem;
+    --padding-tablet: 3rem 6rem;
+    --padding-mobile: 2.6rem;;
+}
 
+html {
+    scroll-behavior:smooth;
 }
 
 button {
@@ -55,4 +62,12 @@ body {
     font-size: 1.6rem;
     background-color: var(--dark-20);
     color: var(--white);
+}
+
+/* class utils */
+.title-section {
+    color: var(--white);
+    font-size: 2.4rem;
+    font-weight: 600;
+    text-transform: uppercase;
 }

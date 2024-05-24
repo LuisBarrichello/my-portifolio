@@ -1,7 +1,7 @@
 .wrapper-hero {
     display: grid;
     grid-template-columns: .6fr 1fr;
-    height: 60vh;
+    height: 100vh;
     width: 100%;
     padding: 2.5rem 0 2.5rem 12rem;
 
@@ -32,37 +32,8 @@
     gap: 2.4rem;
 }
 
-.buttons-contact button {
-    padding: 1rem 2rem;
-}
-
-.buttons-contact button:hover {
-    color: black;
-    background-color: var(--robins-egg-blue-200);
-}
-
-.buttons-contact button a {
-    text-decoration: none;
-    font-weight: 600;
-    color: var(--white);
-    
-    display: flex;
-    align-items: center;
-    gap: 1.6rem;
-}
-
-.button-linkedin {
-    border: 1.778px solid transparent;
-    border-image: var(--button-linkedin-gradient) 1;
-}
-
-.button-github {
-    border: 1.778px solid transparent;
-    border-image: var(--button-github-gradient) 1;
-}
-
 .container-ilustration {
-    height: 50rem;
+    height: 100%;
     background: url(../../assets/img/looper-bg.svg) no-repeat center;
     background-size: cover;
 }
@@ -146,7 +117,7 @@
 
 @media (min-width: 1200px) and (max-width: 1919px) {
     .wrapper-hero {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1.5fr;
     }
 }
 

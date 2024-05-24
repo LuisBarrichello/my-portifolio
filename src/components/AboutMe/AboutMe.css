@@ -1,0 +1,132 @@
+.container-about-me {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+
+    padding: var(--padding-desktop);
+    gap: 5rem;
+}
+
+.wrapper-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper-photo img {
+    width: 100%;
+}
+
+.container-infos-about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1.8rem;
+}
+
+.infos-about-me {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.city {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.infos-about-me div {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.description-about-me {
+    font-size: 1.8rem;
+    color: var(--dark-30);
+    font-weight: 300;
+    line-height: 2.5rem;
+}
+
+.wrapper-social-media {
+    display: flex;
+    gap: 3.4rem;
+}
+
+.wrapper-buttons-about-me {
+    display: flex;
+    gap: 3rem;
+}
+
+@media (max-width: 480px) {
+    .container-about-me {
+        display: flex;
+        margin: auto;
+        padding: 2.6rem; 
+    } 
+    .wrapper-photo {
+        display: none;
+    }
+
+    .infos-about-me .city{
+        font-size: 1.6rem;
+    }
+    .infos-about-me .description-about-me{
+        font-size: 1.4rem;
+    }
+
+    .wrapper-buttons-about-me {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        flex-direction: column;
+    }
+
+    .wrapper-social-media {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .container-about-me {
+        display: flex;
+        margin: auto;
+        padding: var(--padding-tablet); 
+    } 
+    .wrapper-photo {
+        display: none;
+    }
+    
+    .wrapper-buttons-about-me, .wrapper-social-media{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container-about-me {
+        display: flex;
+        margin: auto;
+    } 
+    .wrapper-photo {
+        display: none;
+    }
+
+    .title-section {
+        font-size: 2.4rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+}

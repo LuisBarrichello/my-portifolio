@@ -1,6 +1,11 @@
-- Mobile-First"
+# Portfólio de [Seu Nome]
 
-Adicionar uma rota padrão: Adicionar uma rota padrão (path="*") é uma boa prática para lidar com URLs desconhecidas. Isso garante que o usuário não veja uma página em branco ou um erro quando acessa uma URL que não corresponde a nenhuma das rotas definidas 9.
-<Route path="*">
-   <NotFound />
-</Route>
+Bem-vindo ao meu portfólio! Este é um espaço onde compartilho alguns dos meus projetos e experiências profissionais. 
+
+## Tecnologias Principais
+
+Alguns dos principais tecnologias e ferramentas que utilizo incluem:
+
+- Javascript
+- React
+- API do GitHub

@@ -1,0 +1,40 @@
+button {
+    padding: 1rem 2rem;
+}
+
+.link-button {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--white);
+    
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+div a button {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.button-gradient-purple-blue {
+    width: fit-content;
+    border: 1.778px solid transparent;
+    border-image: var(--button-purple-blue-gradient) 1;
+}
+
+.button-gradient-purple-blue:hover {
+    background: var(--button-purple-blue-gradient) ;
+}
+
+.button-gradient-red-purple {
+    width: fit-content;
+    border: 1.778px solid transparent;
+    border-image: var(--button-red-purple-gradient) 1;
+}
+
+.button-gradient-red-purple:hover {
+    background: var(--button-red-purple-gradient)
+}
