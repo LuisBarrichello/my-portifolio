@@ -19,7 +19,7 @@ function Projects() {
 
             const response = await fetch('https://api.github.com/users/LuisBarrichello/repos', {
                 headers: {
-                    Authorization: `Bearer ${githubToken}`
+                    Authorization: githubToken
                 }
             })
             
@@ -48,7 +48,7 @@ function Projects() {
         try {
             const response = await fetch(`https://api.github.com/repos/LuisBarrichello/${reposName}/languages`, {
                 headers: {
-                    Authorization: `Bearer ${githubToken}`
+                    Authorization: githubToken
                 }
             });
             
