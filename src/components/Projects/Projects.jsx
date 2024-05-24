@@ -5,7 +5,6 @@ import IconArrowDown from "../../assets/img/arrow-down.svg"
 import IconArrowUp from "../../assets/img/arrow-up.svg"
 import IconGithub from "../../assets/img/github.svg"
 import { useEffect, useState } from "react"
-import config from "../../../config"
 import Loader from "../common/Loader/Loader"
 
 
@@ -13,7 +12,7 @@ function Projects() {
     const [repositories, setRepositories] = useState([]);
     const [languages, setLanguages] = useState({});
     const [visibleProjects, setVisibleProjects] = useState(6);
-    const githubToken = config.githubToken
+    const githubToken = process.env.GITHUB_TOKEN;
 
     const fetchDataRepositories = async () => {
         try {
