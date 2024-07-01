@@ -1,0 +1,122 @@
+.container-codewars {
+    padding: var(--padding-desktop);
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.container-data-codewars {
+    background-color:#282828;
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.wrapper-ranks-languages {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+
+.language-data {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+
+    background-color: #353535; 
+    padding: .8rem 2rem; 
+    border-radius: .3rem;
+}
+
+.container-ranks-languages {
+    display: grid;
+    gap: .5rem;
+}
+
+.language-data div {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: .5rem;
+}
+
+.wrapper-language-title {
+    display: flex;
+}
+
+.rounded-full {
+    display: inline-block;
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+}
+
+.rounded-full.white {
+    background-color: white;
+}
+
+.rounded-full.yellow {
+    background-color: yellow;
+}
+
+@media (max-width: 480px) {
+    .container-codewars {
+        padding: var(--padding-mobile);
+    }
+
+    .container-data-codewars {
+        width: 100%;
+    }
+
+    .wrapper-ranks-languages {
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .container-codewars {
+        padding: var(--padding-tablet);
+    }
+
+    .container-data-codewars {
+        width: 100%;
+    }
+
+    .wrapper-ranks-languages {
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .container-data-codewars {
+        width: 70%;
+        align-self: center;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    
+}
+
+@media (min-width: 1200px) and (max-width: 1919px) {
+    
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

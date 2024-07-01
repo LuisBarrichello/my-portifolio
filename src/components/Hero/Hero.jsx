@@ -1,12 +1,11 @@
 import Button from "../common/Buttons/Button"
-
 import IconLinkedin from "../../assets/img/linkedin.svg"
 import IconGithub from "../../assets/img/github.svg"
 import './Hero.css'
 
 function Hero() {
     return (
-        <section className="wrapper-hero">
+        <section className="wrapper-hero hidden">
             <div className="apresentation-buttos-contact">
                 <div className="wrapper-apresentation">
                     <p className="description-apresentation">Olá, eu sou</p>

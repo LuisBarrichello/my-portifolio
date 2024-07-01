@@ -12,7 +12,8 @@ function Projects() {
     const [repositories, setRepositories] = useState([]);
     const [languages, setLanguages] = useState({});
     const [visibleProjects, setVisibleProjects] = useState(6);
-    const githubToken = process.env.GITHUB_TOKEN;
+    /* const githubToken = process.env.GITHUB_TOKEN; */
+    const githubToken = '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'
 
     const fetchDataRepositories = async () => {
         try {
@@ -87,7 +88,7 @@ function Projects() {
     };
 
     return (
-        <section id="projects" className="container-projects">
+        <section id="projects" className="container-projects hidden">
             <h2 className="title-section">projetos</h2>
             {repositories.length === 0 ? (
                 <Loader itensLoad={'projetos'}></Loader>
@@ -121,7 +122,7 @@ function Projects() {
                                             className="button-gradient-purple-blue" 
                                             content="Visualizar Repositório" 
                                             srcImage={IconGithub} 
-                                            altImage="Icone indicando um Link clicavel"
+                                            altImage="Icone indicando um Link clicavel - Visualizar Repositório"
                                             pathLink={repository.html_url}
                                         ></Button>
 
@@ -149,6 +150,7 @@ function Projects() {
                     className={'button-gradient-red-purple load-more'}
                     onClick={loadMoreProjects}
                     content={'Carregar mais projetos'}
+                    alt={"botao idicando para carregar mais projetos"}
                 ></Button>
             )}
             {visibleProjects >= repositories.length && (
@@ -157,6 +159,7 @@ function Projects() {
                     className={'button-gradient-red-purple load-more'}
                     onClick={unloadPreviousProjects}
                     content={'Mostrar menos'}
+                    alt={"botao idicando para ocultar projetos"}
                 ></Button>
             )}
         </section>

@@ -19,7 +19,7 @@ function Experience({data}) {
 
     return (
         <>
-            <section id="experience" className="container-experience">
+            <section id="experience" className="container-experience  hidden">
                 <h2 className="title-section">Experiência</h2>
                 <div className="container-all-experiences">
                     <div className="companies">
@@ -34,7 +34,7 @@ function Experience({data}) {
                     <div className="container-details-about-all-experiences">
                         <div className="experience">
                             <div className="experience-header">
-                                <h4 className="office">{selectedExperience.office}</h4>
+                                <h3 className="office">{selectedExperience.office}</h3>
                                 <span className="start-finish">
                                     <span className="start">{selectedExperience.start} </span>
                                     -

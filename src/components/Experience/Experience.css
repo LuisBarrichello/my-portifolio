@@ -8,6 +8,7 @@
 .container-all-experiences {
     display: grid;
     grid-template-columns: .35fr 1fr;
+    gap: 1rem;
 }
 
 .companies {

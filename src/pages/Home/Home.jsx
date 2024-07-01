@@ -6,7 +6,8 @@ import Experience from "../../components/Experience/Experience"
 import DataExpecience from "../../data/experiences.json"
 import Projects from "../../components/Projects/Projects"
 import Footer from "../../components/common/Footer/Footer"
-
+import LeetCodeDashboard from "../../components/LeetCodeDashboard/LeetCodeDashboard"
+import CodewarsDashboard from "../../components/CodewarsDashboard/CodewarsDashboard"
 
 function Home() {
     return (
@@ -17,6 +18,8 @@ function Home() {
             <Skills></Skills>
             <Experience data={DataExpecience}></Experience>
             <Projects></Projects>
+            <LeetCodeDashboard></LeetCodeDashboard>
+            <CodewarsDashboard></CodewarsDashboard>
             <Footer></Footer>
         </>
     )

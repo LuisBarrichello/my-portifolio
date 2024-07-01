@@ -70,6 +70,12 @@
     align-self: center;
 }
 
+.card-project:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease-in-out;
+}
+
+
 @media (max-width: 480px) {
     .container-projects {
         padding: var(--padding-mobile);
@@ -105,20 +111,4 @@
         flex-direction: column;
         gap: 4rem;
     }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
-    
-}
-
-@media (min-width: 1200px) and (max-width: 1919px) {
-    
-}
-
-@media (min-width: 1920px) {
-    
 }

@@ -1,0 +1,175 @@
+.container-leetcode {
+    padding: var(--padding-desktop);
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+}   
+
+.container-link-perfil a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    gap: 1.8rem;
+}
+
+.icon-leetcode {
+    width: 4%;
+}
+
+.container-leetcode-solved-problems {
+    display:flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container-solved-problems, .container-languages-leetcode, .container-skills-leetcode {
+    background-color: #282828;
+    padding: 1rem;
+    border-radius: .5rem;
+    max-width: 70rem;
+}
+
+.title-leetcode {
+    margin-bottom: 1rem;
+}
+
+.wapper-solved-problems {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.wapper-solved-problems div {
+    background-color: #353535;
+    padding: 1rem;
+    border-radius: .5rem;
+    min-width: 12rem;
+}
+
+.wapper-solved-problems div .easy {
+    color: hsl(180 74% 42%);
+}
+
+.wapper-solved-problems div .medium {
+    color: hsl(43 100% 50%);
+}
+
+.wapper-solved-problems div .hard {
+    color: hsl(0 91% 59%);
+}
+
+.wapper-languages-leetcode {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-languages-leetcode {
+    display: flex;
+    flex-direction: column;
+    min-width: 20%;
+    max-width: 100%;
+}
+
+.wapper-languages-leetcode div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+
+}
+
+.language-leetcode--skill-tag-name {
+    font-size: 1.2rem;
+    padding: .5rem; 
+    border-radius: 8rem;
+    background-color: #ffffff1a;
+    color: #eff2f699;
+}
+
+.button-show-more-less-leetcode {
+    margin-left: 2rem;
+    color: #eff2f699;
+    padding: 0;
+    font-size: 1.4rem;
+}
+
+.container-skills-leetcode {
+    max-width: 50rem;
+}
+
+.skills-category-header {
+    display: flex;
+    align-items: center;
+}
+
+.rounded-full {
+    display: inline-block;
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+}
+
+.rounded-full.skill-advanced {
+    background-color: rgb(239, 71, 67); /* Red color */
+}
+
+.rounded-full.skill-intermediate {
+    background-color: rgb(255 192 30);
+}
+
+.rounded-full.skill-fundamental {
+    background-color: rgb(44 187 93);
+}
+
+.wapper-skills {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    gap: 1.8rem;
+}
+
+.wapper-skills div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.wapper-skills div div {
+    display: flex;
+    flex-direction: row;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap; 
+    overflow: hidden; 
+    gap: 1.5rem !important;
+}
+
+.skills-list div {
+    gap: .4rem
+}
+
+
+
+@media (max-width: 480px) {
+    .container-leetcode {
+        padding: var(--padding-mobile);
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .container-leetcode {
+        padding: var(--padding-tablet);
+    }
+}

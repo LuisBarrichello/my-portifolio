@@ -26,7 +26,7 @@ function AboutMe() {
 
     return (
         <>
-            <section id="about-me" className="container-about-me">
+            <section id="about-me" className="container-about-me hidden">
                 <div className="wrapper-photo">
                     <img src={PhotoMe} alt="foto perfil Luis" />
                 </div>
@@ -46,13 +46,13 @@ function AboutMe() {
                     </div>
                     <div className="wrapper-social-media">
                         <Link to={'https://www.instagram.com/luisbarrichello/'} target="target">
-                            <img src={IconInstagram} alt="" />
+                            <img src={IconInstagram} alt="instagram" />
                         </Link>
                         <Link to={'https://github.com/LuisBarrichello'} target="target">
-                            <img src={IconGithub} alt="" />
+                            <img src={IconGithub} alt="Github" />
                         </Link>
                         <Link to={'https://www.linkedin.com/in/luisgabrielbarrichello'} target="target">
-                            <img src={IconLinkedIn} alt="" />
+                            <img src={IconLinkedIn} alt="LinkedIn" />
                         </Link>
 
                     </div>

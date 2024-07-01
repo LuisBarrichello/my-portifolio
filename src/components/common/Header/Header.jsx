@@ -23,42 +23,85 @@ function Header() {
                 </div>
                 <div className={isMenuOpen ? 'container-navbar mobile' : 'container-navbar'}>
                     <ul>
-                        <Link 
-                            to="home" 
-                            spy={true} 
-                            smooth={true} 
-                            offset={-70} 
-                            duration={500}
-                        >
-                            <li>Home</li>
-                        </Link>
-                        <Link 
-                            to="about-me" 
-                            spy={true} 
-                            smooth={true} 
-                            offset={-70} 
-                            duration={500}
-                        >
-                            <li>Sobre mim</li>
-                        </Link>
-                        <Link 
-                            to='experience'
-                            spy={true} 
-                            smooth={true} 
-                            offset={-70} 
-                            duration={500}
-                        >
-                            <li>Experiência</li>
-                        </Link>
-                        <Link 
-                            to="projects" 
-                            spy={true} 
-                            smooth={true} 
-                            offset={-70} 
-                            duration={500}
-                        >
-                            <li>Projetos</li>
-                        </Link>
+                        <li>
+                            <Link 
+                                to="home" 
+                                spy={true} 
+                                smooth={true} 
+                                offset={-70} 
+                                duration={500}
+                            >
+                                <span>Home</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link 
+                                to="about-me" 
+                                spy={true} 
+                                smooth={true} 
+                                offset={-70} 
+                                duration={500}
+                            >
+                                <span>Sobre mim</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link 
+                                to="skills" 
+                                spy={true} 
+                                smooth={true} 
+                                offset={-70} 
+                                duration={500}
+                            >
+                                <span>Conhecimentos</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link 
+                                to='experience'
+                                spy={true} 
+                                smooth={true} 
+                                offset={-70} 
+                                duration={500}
+                            >
+                                <span>Experiência</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link 
+                                to="projects" 
+                                spy={true} 
+                                smooth={true} 
+                                offset={-70} 
+                                duration={500}
+                            >
+                                <span>Projetos</span>
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link 
+                                to="leetcode" 
+                                spy={true} 
+                                smooth={true} 
+                                offset={-70} 
+                                duration={500}
+                            >
+                                <span>LeetCode estatísticas</span>
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link 
+                                to="codewars" 
+                                spy={true} 
+                                smooth={true} 
+                                offset={-70} 
+                                duration={500}
+                            >
+                                <span>Codewars estatísticas</span>
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </nav>

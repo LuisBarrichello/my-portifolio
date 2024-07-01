@@ -4,14 +4,14 @@
 
     display: flex;
     flex-direction: column;
-    gap: 1.8rem;
+    gap: 2rem;
 }
 
 #footer nav ul {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 1rem;
 }
 #footer nav ul li a {
     display: flex;
@@ -20,14 +20,6 @@
     color: var(--white);
     text-decoration: none;
 }
-
-
-
-
-
-
-
-
 
 @media (max-width: 480px) {
     #footer {
@@ -39,8 +31,4 @@
     #footer {
         padding: var(--padding-tablet);
     }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    
 }

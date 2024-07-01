@@ -12,18 +12,17 @@ const Footer = () => {
             <nav>
                 <ul>
                     <li>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <a href="https://github.com/LuisBarrichello" target="_blank" rel="noopener noreferrer">
                             <img src={IconGithub} alt="icone do github" />
                             <span>Github</span>
                         </a>
                     </li>
                     <li>
-                        <a href="http://" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/luisgabrielbarrichello/" target="_blank" rel="noopener noreferrer">
                             <img src={IconLinkedin} alt="icone do Linkedin" />
                             <span>Linkedin</span>
                         </a>
                     </li>
-                    <li></li>
                 </ul>
             </nav>
         </footer>
