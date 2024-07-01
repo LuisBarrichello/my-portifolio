@@ -11,7 +11,7 @@ function LeetCodeDashboard() {
 
     
     const fetchDataLeetCode = async (query, variables, setState) => {
-        const urlBase = '/leetcode-api/graphql';
+        const urlBase = 'https://leetcode.com/graphql';
 
         try {
             const response = await fetch(urlBase, {
