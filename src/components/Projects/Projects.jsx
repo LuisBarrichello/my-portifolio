@@ -7,18 +7,17 @@ import IconGithub from "../../assets/img/github.svg"
 import { useEffect, useState } from "react"
 import Loader from "../common/Loader/Loader"
 
-
 function Projects() {
     const [repositories, setRepositories] = useState([]);
     const [languages, setLanguages] = useState({});
     const [visibleProjects, setVisibleProjects] = useState(6);
-    /* const githubToken = process.env.GITHUB_TOKEN; */
-    const githubToken = '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'
+
+    const githubToken = import.meta.env.GITHUB_TOKEN
 
     const fetchDataRepositories = async () => {
+        const url = 'https://api.github.com/users/LuisBarrichello/repos'
         try {
-
-            const response = await fetch('https://api.github.com/users/LuisBarrichello/repos', {
+            const response = await fetch(url, {
                 headers: {
                     Authorization: githubToken
                 }
