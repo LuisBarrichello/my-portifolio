@@ -3,11 +3,18 @@ import Header from "../../components/common/Header/Header"
 import AboutMe from "../../components/AboutMe/AboutMe"
 import Skills from "../../components/Skills/Skills"
 import Experience from "../../components/Experience/Experience"
-import DataExpecience from "../../data/experiences.json"
 import Projects from "../../components/Projects/Projects"
 import Footer from "../../components/common/Footer/Footer"
-import LeetCodeDashboard from "../../components/LeetCodeDashboard/LeetCodeDashboard"
-import CodewarsDashboard from "../../components/CodewarsDashboard/CodewarsDashboard"
+
+import MyServices from "../../components/MyServices/MyServices"
+
+/**
+ * @function Home
+ * @description The main page of my portfolio
+ * @returns {JSX.Element} A JSX element representing the main page
+ * @example
+ * <Home />
+ */
 
 function Home() {
     return (
@@ -16,13 +23,12 @@ function Home() {
             <Hero></Hero>
             <AboutMe></AboutMe>
             <Skills></Skills>
-            <Experience data={DataExpecience}></Experience>
+            <Experience></Experience>
             <Projects></Projects>
-            <LeetCodeDashboard></LeetCodeDashboard>
-            <CodewarsDashboard></CodewarsDashboard>
+            <MyServices></MyServices>
             <Footer></Footer>
         </>
-    )
+    );
 }
 
 export default Home

@@ -1,6 +1,6 @@
 .wrapper-hero {
     display: grid;
-    grid-template-columns: .6fr 1fr;
+    grid-template-columns: 0.6fr 1fr;
     height: 100vh;
     width: 100%;
     padding: 2.5rem 0 2.5rem 12rem;
@@ -19,7 +19,6 @@
     font-size: 6.4rem;
     color: var(--brand-color);
 }
-
 
 .apresentation-buttos-contact {
     display: flex;
@@ -42,7 +41,7 @@
 @media (max-width: 480px) {
     .wrapper-hero {
         display: flex;
-        padding: 2.4rem;
+        padding: var(--padding-mobile);
     }
 
     .wrapper-apresentation {
@@ -64,6 +63,10 @@
         align-items: center;
     }
 
+    .buttons-contact {
+        align-items: center;
+    }
+
     .wrapper-apresentation {
         font-size: 1.6rem;
         text-align: center;
@@ -82,7 +85,7 @@
     .wrapper-hero {
         display: flex;
         justify-content: center;
-        padding: 2.6rem;
+        padding: var(--padding-tablet);
     }
 
     .apresentation-buttos-contact {
@@ -106,7 +109,7 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
     .wrapper-hero {
-        grid-template-columns: 1fr .9fr;
+        grid-template-columns: 1fr 0.9fr;
     }
 }
 

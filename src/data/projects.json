@@ -1,0 +1,97 @@
+[
+    {
+        "title": "E-commerce - API REST com Spring Boot",
+        "description": "API RESTful de E-commerce desenvolvida com Spring Boot, oferecendo funcionalidades de autenticação, gestão de produtos, pedidos e integração com métodos de pagamento, e pretendo criar chat em tempo real entre lojista e clientes.",
+        "image_url": "../../src/assets/img/projects/api.svg",
+        "technologies": [
+            "Java",
+            "Spring Boot",
+            "MySQL"
+        ],
+        "homepage": "",
+        "html_url_github": "https://github.com/LuisBarrichello/ecommerce-api-springboot"
+    },
+    {
+        "title": "FórumHub - API REST com Spring",
+        "description": "Este é o FórumHub, um projeto de API REST desenvolvido com Spring para gerenciar tópicos de discussão em um fórum. A API permite a criação, listagem, atualização e exclusão de tópicos, usuários, cursos e respostas, seguindo as melhores práticas do modelo REST.",
+        "image_url": "../../src/assets/img/projects/api.svg",
+        "technologies": [
+            "Java",
+            "MySQL",
+            "Spring Boot"
+        ],
+        "homepage": "",
+        "html_url_github": "https://github.com/LuisBarrichello/Challenge-API-REST-ForumHub"
+    },
+    {
+        "title": "Best Browser Games",
+        "description": " É uma aplicação web desenvolvida em React, criada como uma comunidade online para avaliação e compartilhamento de experiências relacionadas a jogos de navegador (browser games).",
+        "image_url": "../../src/assets/img/projects/best-browser-games.png",
+        "technologies": [
+            "React",
+            "JavaScript",
+            "CSS"
+        ],
+        "homepage": "https://best-browser-games-github-luisbarrichello.vercel.app/",
+        "html_url_github": "https://github.com/LuisBarrichello/BestBrowserGames"
+    },
+    {
+        "title": "Steel Sales Calculator",
+        "description": "O projeto é uma calculado para Vendedores e pessoas interessadas nos calculos de construção civil, onde as pessoas tendem a ter maior dificuldade de entendimento. O projeto também é para eu conhecer e aprender o básico bootstrap, além disso, praticar meus conhecimentos.",
+        "image_url": "../../src/assets/img/projects/steel-sales-calculator.png",
+        "technologies": [
+            "React",
+            "Typescript",
+            "Bootstrap"
+        ],
+        "homepage": "https://steel-sales-calculator.vercel.app/",
+        "html_url_github": "https://github.com/LuisBarrichello/SteelSalesCalculator"
+    },
+    {
+        "title": "To-Do List",
+        "description": "O projeto To-Do List é uma aplicação web interativa que permite aos usuários fazer a gestão de suas tarefas. Desenvolvido como projeto final do curso de Front-End Dinâmico, esta aplicação oferece funcionalidades para cadastro de usuários, login, criação, edição e exclusão de tarefas, futuramente estarei implementando a visualização organizada das tarefas por prazos e prioridades.",
+        "image_url": "../../src/assets/img/projects/todo-list.png",
+        "technologies": [
+            "HTML5",
+            "CSS3",
+            "JavaScript"
+        ],
+        "homepage": "https://task-master-cyan.vercel.app/login.html",
+        "html_url_github": "https://github.com/LuisBarrichello/ToDo-List?tab=readme-ov-file"
+    },
+    {
+        "title": "Orbit Trips",
+        "description": "Este é um projeto de criação de um site HTML estático com a temática de venda de viagens intergaláticas. O objetivo deste projeto é oferecer uma plataforma simples onde os visitantes possam explorar e adquirir viagens fictícias para destinos além do nosso planeta.",
+        "image_url": "../../src/assets/img/projects/orbit-trips.png",
+        "technologies": [
+            "HTML5",
+            "CSS3",
+            "Javascript"
+        ],
+        "homepage": "https://onerbreno.github.io/orbit-trips/",
+        "html_url_github": "https://github.com/onerbreno/orbit-trips"
+    },
+    {
+        "title": "Landing page - página de contratações",
+        "description": "Projeto de uma Landing page destinada a novas contratações da empresa OptimusTech(fictícia).",
+        "image_url": "../../src/assets/img/projects/pagina-contratacoes.png",
+        "technologies": [
+            "HTML5",
+            "CSS3"
+        ],
+        "homepage": "https://luisbarrichello.github.io/7DaysOfCode-pagina-contratacoes/",
+        "html_url_github": "https://github.com/LuisBarrichello/7DaysOfCode-pagina-contratacoes"
+    },
+    {
+        "title": "E-commerce - front end com React",
+        "description": "Como parte de desenvolver um projeto full stack, essa aplicação incorpora minha api desenvolvida com java e spring. Aderindo-se ao simple design, mais minimalista, oferencendo as principais paginas para interação ao e-commerce, desenvolvida com react e typescript",
+        "image_url": "",
+        "technologies": [
+            "React",
+            "Typescript",
+            "CSS"
+        ],
+        "homepage": "",
+        "html_url_github": ""
+    }
+]

@@ -6,10 +6,10 @@ import './Hero.css'
 function Hero() {
     return (
         <section className="wrapper-hero hidden">
-            <div className="apresentation-buttos-contact">
+            <div className="apresentation-buttos-contact hidden">
                 <div className="wrapper-apresentation">
                     <p className="description-apresentation">Olá, eu sou</p>
-                    <span className="my-name">Luís Gabriel</span>
+                    <span className="my-name hidden">Luís Gabriel</span>
                     <p className="description-apresentation">Software Engineer</p>
                 </div>
                 <div className="buttons-contact">
@@ -31,7 +31,7 @@ function Hero() {
                     ></Button>
                 </div>
             </div>
-            <div className="container-ilustration">
+            <div className="container-ilustration hidden">
                 {/* Ilustration here */}
             </div>
         </section>

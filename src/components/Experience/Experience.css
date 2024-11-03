@@ -1,14 +1,19 @@
 .container-experience {
+    width: 100%;
+    min-height: 60vh;
     padding: var(--padding-desktop);
     display: flex;
     flex-direction: column;
     gap: 1.8rem;
+    background: var(--dark-20);
 }
 
 .container-all-experiences {
+    flex: 1;
+    height: 100%;
     display: grid;
-    grid-template-columns: .35fr 1fr;
-    gap: 1rem;
+    grid-template-columns: 0.35fr 1fr;
+    gap: 1.8rem;
 }
 
 .companies {
@@ -26,8 +31,10 @@
     opacity: 0.8;
 }
 
-.companies .company:active, .companies .company:focus {
-    background-color: var(--gray); 
+.company.active,
+.companies .company:active,
+.companies .company:focus {
+    background-color: var(--gray);
     border-left: 2px solid var(--brand-color);
     color: var(--brand-color);
     font-weight: 300;
@@ -58,9 +65,17 @@
 }
 
 .experience-description {
-    color: var(--dark-30);
+    flex: 1;
+    color: var(--text-color);
     font-size: 1.8rem;
     font-weight: 300;
+}
+
+.experience-description ul {
+    padding-left: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
 }
 
 @media (max-width: 480px) {
@@ -72,7 +87,7 @@
         display: flex;
         flex-direction: column;
     }
-    
+
     .container-all-experiences .companies {
         display: flex;
         margin-bottom: 3rem;
@@ -86,7 +101,8 @@
         opacity: 0.8;
     }
 
-    .companies .company:active, .companies .company:focus {
+    .companies .company:active,
+    .companies .company:focus {
         border-bottom: 2px solid var(--brand-color);
         border-left: none;
     }
@@ -114,10 +130,9 @@
     }
 
     .experience-description {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
-}    
-
+}
 
 @media (min-width: 481px) and (max-width: 767px) {
     .container-experience {
@@ -125,12 +140,12 @@
     }
 
     .container-all-experiences {
-        grid-template-columns: .6fr .8fr;
+        grid-template-columns: 0.6fr 0.8fr;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     .container-all-experiences {
-        grid-template-columns: .5fr .8fr;
+        grid-template-columns: 0.5fr 0.8fr;
     }
 }

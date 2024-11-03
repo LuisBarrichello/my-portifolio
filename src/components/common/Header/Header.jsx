@@ -1,6 +1,5 @@
 import { Link } from 'react-scroll';
-import MenuHamburguer from "../../../assets/img/menu-hamburguer.svg"
-import './Header.css'
+import './Header.css';
 import { useState } from 'react';
 
 function Header() {
@@ -8,71 +7,85 @@ function Header() {
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
-    }
+    };
 
     return (
-        <header className='main-header'>
+        <header className="main-header">
             <nav>
                 <div>
-                    <span className='logo'>Portfólio</span>
+                    <span className="logo">Portfólio</span>
                 </div>
                 <div className="menu-hamburguer">
-                    <button className='button-menu-hamburguer' onClick={toggleMenu}>
-                        <img src={MenuHamburguer} alt="icone menu hamburguer" />
+                    <button
+                        className={`button-menu-hamburguer ${
+                            isMenuOpen ? 'open' : ''
+                        }`}
+                        onClick={toggleMenu}
+                    >
+                        <span className="burger-bar"></span>
+                        <span className="burger-bar"></span>
+                        <span className="burger-bar"></span>
                     </button>
                 </div>
-                <div className={isMenuOpen ? 'container-navbar mobile' : 'container-navbar'}>
+                <div
+                    className={
+                        isMenuOpen
+                            ? 'container-navbar mobile'
+                            : 'container-navbar'
+                    }
+                >
                     <ul>
                         <li>
-                            <Link 
-                                to="home" 
-                                spy={true} 
-                                smooth={true} 
-                                offset={-70} 
+                            <Link
+                                to="home"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
                                 duration={500}
                             >
                                 <span>Home</span>
                             </Link>
                         </li>
                         <li>
-                            <Link 
-                                to="about-me" 
-                                spy={true} 
-                                smooth={true} 
-                                offset={-70} 
+                            <Link
+                                to="about-me"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
                                 duration={500}
                             >
                                 <span>Sobre mim</span>
                             </Link>
                         </li>
                         <li>
-                            <Link 
-                                to="skills" 
-                                spy={true} 
-                                smooth={true} 
-                                offset={-70} 
+                            <Link
+                                to="skills"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
                                 duration={500}
                             >
                                 <span>Conhecimentos</span>
                             </Link>
                         </li>
                         <li>
-                            <Link 
-                                to='experience'
-                                spy={true} 
-                                smooth={true} 
-                                offset={-70} 
+                            <Link
+                                to="experience"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
                                 duration={500}
                             >
                                 <span>Experiência</span>
                             </Link>
                         </li>
+
                         <li>
-                            <Link 
-                                to="projects" 
-                                spy={true} 
-                                smooth={true} 
-                                offset={-70} 
+                            <Link
+                                to="projects"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
                                 duration={500}
                             >
                                 <span>Projetos</span>
@@ -80,26 +93,14 @@ function Header() {
                         </li>
 
                         <li>
-                            <Link 
-                                to="leetcode" 
-                                spy={true} 
-                                smooth={true} 
-                                offset={-70} 
+                            <Link
+                                to="my-services"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
                                 duration={500}
                             >
-                                <span>LeetCode estatísticas</span>
-                            </Link>
-                        </li>
-
-                        <li>
-                            <Link 
-                                to="codewars" 
-                                spy={true} 
-                                smooth={true} 
-                                offset={-70} 
-                                duration={500}
-                            >
-                                <span>Codewars estatísticas</span>
+                                <span>Serviços</span>
                             </Link>
                         </li>
                     </ul>

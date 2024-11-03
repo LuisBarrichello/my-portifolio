@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', 'Montserrat' sans-serif;
 }
 
 :root {
@@ -10,24 +10,33 @@
 
     /* Colors */
     /* Brand Colours */
-    --brand-color: #00D2DF;
+    --brand-color: #00d2df;
 
     /* Dark Scale */
     --dark-10: #121212;
     --dark-20: #151515;
-    --dark-30: #C4C4C4;
+    --dark-30: #c4c4c4;
+    --text-color: #E0E0E0;
     --gray: #222;
-    --white: #FFFFFF;
+    --white: #ffffff;
 
     /* Color System */
-    --support-01: #2962FF;
-    --support-02: #0BB07B;
-    --support-03: #FFCE52;
-    --support-04: #F03D3D;
-    --support-05: #E0E0E0;
+    --support-01: #2962ff;
+    --support-02: #0bb07b;
+    --support-03: #ffce52;
+    --support-04: #f03d3d;
+    --support-05: #e0e0e0;
 
-    --button-purple-blue-gradient: linear-gradient(to right, #9358F7, #10D7E2);
-    --button-red-purple-gradient: linear-gradient(to right, #D24074, #6518B4);
+    --button-purple-blue-gradient: linear-gradient(
+        to bottom left,
+        #9358f7,
+        #10d7e2
+    );
+    --button-red-purple-gradient: linear-gradient(
+        to bottom left,
+        #d24074,
+        #6518b4
+    );
 
     /* https://uicolors.app/create */
     --robins-egg-blue-100: #ceffff;
@@ -44,11 +53,11 @@
 
     --padding-desktop: 4rem 12rem;
     --padding-tablet: 3rem 6rem;
-    --padding-mobile: 2.6rem;;
+    --padding-mobile: 2.6rem;
 }
 
 html {
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
 }
 
 button {
@@ -58,8 +67,9 @@ button {
 
 body {
     font-size: 1.6rem;
-    background-color: var(--dark-20);
+    background-color: var(--dark-10);
     color: var(--white);
+    font-family: 'Inter';
 }
 
 /* class utils */
@@ -68,4 +78,18 @@ body {
     font-size: 2.4rem;
     font-weight: 600;
     text-transform: uppercase;
+}
+
+@media (max-width: 480px) {
+    .title-section, .subtitle-section{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .title-section, .subtitle-section{
+        width: 100%;
+        text-align: center;
+    }
 }
