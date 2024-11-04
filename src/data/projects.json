@@ -2,7 +2,7 @@
     {
         "title": "E-commerce - API REST com Spring Boot",
         "description": "API RESTful de E-commerce desenvolvida com Spring Boot, oferecendo funcionalidades de autenticação, gestão de produtos, pedidos e integração com métodos de pagamento, e pretendo criar chat em tempo real entre lojista e clientes.",
-        "image_url": "../../../public/assets/img/projects/api.svg",
+        "image_url": "../../../assets/img/projects/api.svg",
         "technologies": [
             "Java",
             "Spring Boot",
@@ -14,7 +14,7 @@
     {
         "title": "FórumHub - API REST com Spring",
         "description": "Este é o FórumHub, um projeto de API REST desenvolvido com Spring para gerenciar tópicos de discussão em um fórum. A API permite a criação, listagem, atualização e exclusão de tópicos, usuários, cursos e respostas, seguindo as melhores práticas do modelo REST.",
-        "image_url": "../../../public/assets/img/projects/api.svg",
+        "image_url": "../../../assets/img/projects/api.svg",
         "technologies": [
             "Java",
             "MySQL",
@@ -26,7 +26,7 @@
     {
         "title": "Best Browser Games",
         "description": " É uma aplicação web desenvolvida em React, criada como uma comunidade online para avaliação e compartilhamento de experiências relacionadas a jogos de navegador (browser games).",
-        "image_url": "../../../public/assets/img/projects/best-browser-games.png",
+        "image_url": "../../../assets/img/projects/best-browser-games.png",
         "technologies": [
             "React",
             "JavaScript",
@@ -38,7 +38,7 @@
     {
         "title": "Steel Sales Calculator",
         "description": "O projeto é uma calculado para Vendedores e pessoas interessadas nos calculos de construção civil, onde as pessoas tendem a ter maior dificuldade de entendimento. O projeto também é para eu conhecer e aprender o básico bootstrap, além disso, praticar meus conhecimentos.",
-        "image_url": "../../../public/assets/img/projects/steel-sales-calculator.png",
+        "image_url": "../../../assets/img/projects/steel-sales-calculator.png",
         "technologies": [
             "React",
             "Typescript",
@@ -50,7 +50,7 @@
     {
         "title": "To-Do List",
         "description": "O projeto To-Do List é uma aplicação web interativa que permite aos usuários fazer a gestão de suas tarefas. Desenvolvido como projeto final do curso de Front-End Dinâmico, esta aplicação oferece funcionalidades para cadastro de usuários, login, criação, edição e exclusão de tarefas, futuramente estarei implementando a visualização organizada das tarefas por prazos e prioridades.",
-        "image_url": "../../../public/assets/img/projects/todo-list.png",
+        "image_url": "../../../assets/img/projects/todo-list.png",
         "technologies": [
             "HTML5",
             "CSS3",
@@ -62,7 +62,7 @@
     {
         "title": "Orbit Trips",
         "description": "Este é um projeto de criação de um site HTML estático com a temática de venda de viagens intergaláticas. O objetivo deste projeto é oferecer uma plataforma simples onde os visitantes possam explorar e adquirir viagens fictícias para destinos além do nosso planeta.",
-        "image_url": "../../../public/assets/img/projects/orbit-trips.png",
+        "image_url": "../../../assets/img/projects/orbit-trips.png",
         "technologies": [
             "HTML5",
             "CSS3",
@@ -74,7 +74,7 @@
     {
         "title": "Landing page - página de contratações",
         "description": "Projeto de uma Landing page destinada a novas contratações da empresa OptimusTech(fictícia).",
-        "image_url": "../../../public/assets/img/projects/pagina-contratacoes.png",
+        "image_url": "../../../assets/img/projects/pagina-contratacoes.png",
         "technologies": [
             "HTML5",
             "CSS3"
@@ -85,7 +85,7 @@
     {
         "title": "Projetos #boraCodar da Rocketseat",
         "description": "Projetos pequenos de front-end do #boraCodar da Rocketseat, como: pricing table, um kanban, tela de login, landing page, dashboard e muitos outros projetos.",
-        "image_url": "../../../public/assets/img/projects/boracodar.png",
+        "image_url": "../../../assets/img/projects/boracodar.png",
         "technologies": [
             "HTML5",
             "CSS3",
