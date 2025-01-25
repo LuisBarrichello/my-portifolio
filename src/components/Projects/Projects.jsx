@@ -11,7 +11,6 @@ import projectsData from '../../data/projects.json';
 function Projects() {
     const [visibleProjects, setVisibleProjects] = useState(4);
 
-
     const loadMoreProjects = () => {
         setVisibleProjects((prevVisibleProjects) => prevVisibleProjects + 6);
     };
@@ -68,8 +67,9 @@ function Projects() {
                                                     content="Visualizar Repositório"
                                                     srcImage={IconGithub}
                                                     altImage="Icone indicando um Link clicavel - Visualizar Repositório"
-                                                    pathLink={project.html_url}
-                                                ></Button>
+                                                    pathLink={
+                                                        project.html_url_github
+                                                    }></Button>
 
                                                 {project.homepage == '' ||
                                                 project.homepage ==
@@ -84,8 +84,7 @@ function Projects() {
                                                         altImage="Icone indicando um Link clicavel"
                                                         pathLink={
                                                             project.homepage
-                                                        }
-                                                    ></Button>
+                                                        }></Button>
                                                 )}
                                             </div>
                                         </div>

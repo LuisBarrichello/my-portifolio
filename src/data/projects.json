@@ -93,17 +93,5 @@
         ],
         "homepage": "",
         "html_url_github": "https://github.com/LuisBarrichello/boracodar"
-    },
-    {
-        "title": "E-commerce - front end com React",
-        "description": "Como parte de desenvolver um projeto full stack, essa aplicação incorpora minha api desenvolvida com java e spring. Aderindo-se ao simple design, mais minimalista, oferencendo as principais paginas para interação ao e-commerce, desenvolvida com react e typescript",
-        "image_url": "",
-        "technologies": [
-            "React",
-            "Typescript",
-            "CSS"
-        ],
-        "homepage": "",
-        "html_url_github": ""
     }
 ]
