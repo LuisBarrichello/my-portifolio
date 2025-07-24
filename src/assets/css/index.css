@@ -1,31 +1,32 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', 'Montserrat' sans-serif;
+@import 'tailwindcss';
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        @apply bg-white text-gray-800 dark:bg-dark-10 dark:text-white font-sans text-base;
+    }
+    button {
+        @apply cursor-pointer;
+    }
 }
 
-:root {
-    font-size: 62.5%;
-
-    /* Colors */
-    /* Brand Colours */
-    --brand-color: #00d2df;
-
-    /* Dark Scale */
-    --dark-10: #121212;
-    --dark-20: #151515;
+@theme {
+    --color-brand: #00d2df;
+    --color-dark-10: #121212;
+    --color-dark-20: #151515;
     --dark-30: #c4c4c4;
-    --text-color: #E0E0E0;
+    --color-text-color: #e0e0e0;
     --gray: #222;
-    --white: #ffffff;
 
-    /* Color System */
-    --support-01: #2962ff;
-    --support-02: #0bb07b;
-    --support-03: #ffce52;
-    --support-04: #f03d3d;
-    --support-05: #e0e0e0;
+    --font-family-sans: 'Inter', 'Montserrat', sans-serif;
+    
+    --color-support-01: #2962ff;
+    --color-support-02: #0bb07b;
+    --color-support-03: #ffce52;
+    --color-support-04: #f03d3d;
+    --color-support-05: #e0e0e0;
 
     --button-purple-blue-gradient: linear-gradient(
         to bottom left,
@@ -39,57 +40,19 @@
     );
 
     /* https://uicolors.app/create */
-    --robins-egg-blue-100: #ceffff;
-    --robins-egg-blue-50: #ebfffe;
-    --robins-egg-blue-200: #a2fdff;
-    --robins-egg-blue-300: #63f8fd;
-    --robins-egg-blue-400: #1ceaf4;
-    --robins-egg-blue-500: #00d2df;
-    --robins-egg-blue-600: #03a4b7;
-    --robins-egg-blue-700: #0a8294;
-    --robins-egg-blue-800: #126878;
-    --robins-egg-blue-900: #145665;
-    --robins-egg-blue-950: #063a46;
+    --color-robins-egg-blue-100: #ceffff;
+    --color-robins-egg-blue-50: #ebfffe;
+    --color-robins-egg-blue-200: #a2fdff;
+    --color-robins-egg-blue-300: #63f8fd;
+    --color-robins-egg-blue-400: #1ceaf4;
+    --color-robins-egg-blue-500: #00d2df;
+    --color-robins-egg-blue-600: #03a4b7;
+    --color-robins-egg-blue-700: #0a8294;
+    --color-robins-egg-blue-800: #126878;
+    --color-robins-egg-blue-900: #145665;
+    --color-robins-egg-blue-950: #063a46;
 
     --padding-desktop: 4rem 12rem;
     --padding-tablet: 3rem 6rem;
     --padding-mobile: 2.6rem;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-button {
-    cursor: pointer;
-    all: unset;
-}
-
-body {
-    font-size: 1.6rem;
-    background-color: var(--dark-10);
-    color: var(--white);
-    font-family: 'Inter';
-}
-
-/* class utils */
-.title-section {
-    color: var(--white);
-    font-size: 2.4rem;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-@media (max-width: 480px) {
-    .title-section, .subtitle-section{
-        width: 100%;
-        text-align: center;
-    }
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-    .title-section, .subtitle-section{
-        width: 100%;
-        text-align: center;
-    }
 }
