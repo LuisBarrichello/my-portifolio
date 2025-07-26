@@ -1,7 +1,7 @@
 import Button from '../common/Buttons/Button';
-import IconChat from '../../assets/img/icon-chat.svg';
-import IconCode from '../../assets/img/icon-tag-code.svg';
-import IconLogicPartition from '../../assets/img/icon-logic-partition.svg';
+import IconChat from '../../assets/img/icon-chat.svg?react';
+import IconCode from '../../assets/img/icon-tag-code.svg?react';
+import IconLogicPartition from '../../assets/img/icon-logic-partition.svg?react';
 import './MyServices.css';
 
 function MyServices() {
@@ -49,28 +49,27 @@ function MyServices() {
                     </div>
                     <div className="wrapper-cards-my-services hidden">
                         <div className="card-my-services button-gradient-purple-blue">
-                            <figure>
-                                <img
-                                    src={IconLogicPartition}
-                                    alt="icon logic partition"
-                                />
-                            </figure>
+                            <IconLogicPartition
+                                aria-label="icon logic partition"
+                                className="w-12 h-12"
+                            />
                             <div>
                                 <h4 className="card-title-my-services">
                                     Backend Development
                                 </h4>
                                 <span>
-                                    Desenvolvo APIs robustas e
-                                    sistemas escaláveis utilizando Java e Spring
-                                    boot, banco de dados com MySQL ou PostgreSQL, entre
-                                    outras tecnologias.
+                                    Desenvolvo APIs robustas e sistemas
+                                    escaláveis utilizando Java e Spring boot,
+                                    banco de dados com MySQL ou PostgreSQL,
+                                    entre outras tecnologias.
                                 </span>
                             </div>
                         </div>
                         <div className="card-my-services button-gradient-red-purple">
-                            <figure>
-                                <img src={IconCode} alt="icon code" />
-                            </figure>
+                            <IconCode
+                                aria-label="icon code"
+                                className="w-12 h-12"
+                            />
                             <div>
                                 <h4 className="card-title-my-services">
                                     Frontend Development
@@ -89,12 +88,12 @@ function MyServices() {
             </div>
             <Button
                 target="target"
-                className="button-gradient-purple-blue hidden"
+                variant={'purple-blue'}
+                className="hidden"
                 content="Vamos conversar?"
                 altImage="icon chat"
-                srcImage={IconChat}
-                pathLink="https://wa.me/15997507932?text=Olá%20Luis,%20vi%20seus%20serviços%20e%20gostaria%20de%20saber%20mais!"
-            ></Button>
+                IconComponent={IconChat}
+                pathLink="https://wa.me/15997507932?text=Olá%20Luis,%20vi%20seus%20serviços%20e%20gostaria%20de%20saber%20mais!"></Button>
         </section>
     );
 }

@@ -1,6 +1,6 @@
 import './Footer.css';
-import IconGithub from '../../../assets/img/github.svg';
-import IconLinkedin from '../../../assets/img/linkedin.svg';
+import IconGithub from '../../../assets/img/github.svg?react';
+import IconLinkedin from '../../../assets/img/linkedin.svg?react';
 
 const Footer = () => {
     return (
@@ -18,9 +18,11 @@ const Footer = () => {
                             <a
                                 href="https://github.com/LuisBarrichello"
                                 target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <img src={IconGithub} alt="icone do github" />
+                                rel="noopener noreferrer">
+                                <IconGithub
+                                    aria-label="icone do github"
+                                    className="w-5 h-5"
+                                />
                                 <span>Github</span>
                             </a>
                         </li>
@@ -28,11 +30,10 @@ const Footer = () => {
                             <a
                                 href="https://www.linkedin.com/in/luisgabrielbarrichello/"
                                 target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <img
-                                    src={IconLinkedin}
-                                    alt="icone do Linkedin"
+                                rel="noopener noreferrer">
+                                <IconLinkedin
+                                    aria-label="icone do Linkedin"
+                                    className="w-5 h-5"
                                 />
                                 <span>Linkedin</span>
                             </a>
@@ -46,8 +47,7 @@ const Footer = () => {
                     <a
                         href="https://linkedin.com/in/luisgabrielbarrichello"
                         target="_blank"
-                        rel="noopener noreferrer"
-                    >
+                        rel="noopener noreferrer">
                         Luís Gabriel Barrichello
                     </a>
                 </span>

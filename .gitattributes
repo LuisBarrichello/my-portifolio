@@ -1,0 +1,10 @@
+# Auto-detect text files and ensure they use LF line endings
+* text=auto eol=lf
+
+# Explicitly declare binary files to prevent Git from touching them
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.pdf binary
+*.svg binary

@@ -1,12 +1,12 @@
-import './Projects.css';
-import Button from '../common/Buttons/Button';
-import IconLink from '../../assets/img/link.svg';
-import IconArrowDown from '../../assets/img/arrow-down.svg';
-import IconArrowUp from '../../assets/img/arrow-up.svg';
-import IconGithub from '../../assets/img/github.svg';
 import { useState } from 'react';
-import Loader from '../common/Loader/Loader';
+import IconArrowDown from '../../assets/img/arrow-down.svg?react';
+import IconArrowUp from '../../assets/img/arrow-up.svg?react';
+import IconGithub from '../../assets/img/github.svg?react';
+import IconLink from '../../assets/img/link.svg?react';
 import projectsData from '../../data/projects.json';
+import Button from '../common/Buttons/Button';
+import Loader from '../common/Loader/Loader';
+import './Projects.css';
 
 function Projects() {
     const [visibleProjects, setVisibleProjects] = useState(4);
@@ -63,9 +63,9 @@ function Projects() {
                                             <div className="wrapper-buttons-project">
                                                 <Button
                                                     target="target"
-                                                    className="button-gradient-purple-blue"
+                                                    variant={'purple-blue'}
                                                     content="Visualizar Repositório"
-                                                    srcImage={IconGithub}
+                                                    IconComponent={IconGithub}
                                                     altImage="Icone indicando um Link clicavel - Visualizar Repositório"
                                                     pathLink={
                                                         project.html_url_github
@@ -78,9 +78,9 @@ function Projects() {
                                                 ) : (
                                                     <Button
                                                         target="target"
-                                                        className="button-gradient-red-purple"
+                                                        variant={'red-purple'}
                                                         content="Visualizar projeto"
-                                                        srcImage={IconLink}
+                                                        IconComponent={IconLink}
                                                         altImage="Icone indicando um Link clicavel"
                                                         pathLink={
                                                             project.homepage
@@ -95,21 +95,21 @@ function Projects() {
             )}
             {visibleProjects < projectsData.length && (
                 <Button
-                    srcImage={IconArrowDown}
-                    className={'button-gradient-red-purple load-more'}
+                    IconComponent={IconArrowDown}
+                    variant={'red-purple'}
+                    className={'load-more'}
                     onClick={loadMoreProjects}
                     content={'Carregar mais projetos'}
-                    alt={'botao idicando para carregar mais projetos'}
-                ></Button>
+                    alt={'botao idicando para carregar mais projetos'}></Button>
             )}
             {visibleProjects >= projectsData.length && (
                 <Button
-                    srcImage={IconArrowUp}
-                    className={'button-gradient-red-purple load-more'}
+                    IconComponent={IconArrowUp}
+                    variant={'red-purple'}
+                    className={'load-more'}
                     onClick={unloadPreviousProjects}
                     content={'Mostrar menos'}
-                    alt={'botao idicando para ocultar projetos'}
-                ></Button>
+                    alt={'botao idicando para ocultar projetos'}></Button>
             )}
         </section>
     );

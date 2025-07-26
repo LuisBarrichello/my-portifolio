@@ -1,5 +1,7 @@
 @import 'tailwindcss';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @layer base {
     html {
         scroll-behavior: smooth;
@@ -27,6 +29,11 @@
     --color-support-03: #ffce52;
     --color-support-04: #f03d3d;
     --color-support-05: #e0e0e0;
+
+    --color-brand-purple: #9358f7;
+    --color-brand-red: #d24074;
+    --color-brand-blue: #10d7e2;
+    --color-brand-purple-dark: #6518b4;
 
     --button-purple-blue-gradient: linear-gradient(
         to bottom left,
