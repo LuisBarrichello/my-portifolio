@@ -5,7 +5,7 @@ import './Hero.css';
 
 function Hero() {
     return (
-        <section className="wrapper-hero hidden">
+        <section id="home" className="wrapper-hero hidden">
             <div className="apresentation-buttos-contact hidden">
                 <div className="wrapper-apresentation">
                     <p className="description-apresentation">Olá, eu sou</p>
