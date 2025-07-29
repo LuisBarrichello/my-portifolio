@@ -6,9 +6,27 @@
     html {
         scroll-behavior: smooth;
     }
+
     body {
         @apply bg-white text-gray-800 dark:bg-dark-10 dark:text-white font-sans text-base;
+        @apply font-sans text-base;
     }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-poppins;
+    }
+
+    p,
+    span,
+    li {
+        @apply font-inter;
+    }
+
     button {
         @apply cursor-pointer;
     }
@@ -18,12 +36,13 @@
     --color-brand: #00d2df;
     --color-dark-10: #121212;
     --color-dark-20: #151515;
-    --dark-30: #c4c4c4;
-    --color-text-color: #e0e0e0;
-    --gray: #222;
+    --color-dark-30: #c4c4c4;
+    --color-text: #e0e0e0;
+    --color-gray: #222;
 
-    --font-family-sans: 'Inter', 'Montserrat', sans-serif;
-    
+    --font-poppins: 'Poppins', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+
     --color-support-01: #2962ff;
     --color-support-02: #0bb07b;
     --color-support-03: #ffce52;
@@ -47,17 +66,17 @@
     );
 
     /* https://uicolors.app/create */
-    --color-robins-egg-blue-100: #ceffff;
-    --color-robins-egg-blue-50: #ebfffe;
-    --color-robins-egg-blue-200: #a2fdff;
-    --color-robins-egg-blue-300: #63f8fd;
-    --color-robins-egg-blue-400: #1ceaf4;
-    --color-robins-egg-blue-500: #00d2df;
-    --color-robins-egg-blue-600: #03a4b7;
-    --color-robins-egg-blue-700: #0a8294;
-    --color-robins-egg-blue-800: #126878;
-    --color-robins-egg-blue-900: #145665;
-    --color-robins-egg-blue-950: #063a46;
+    --color-brand-blue-50: #ebfffe;
+    --color-brand-blue-100: #ceffff;
+    --color-brand-blue-200: #a2fdff;
+    --color-brand-blue-300: #63f8fd;
+    --color-brand-blue-400: #1ceaf4;
+    --color-brand-blue-500: #00d2df;
+    --color-brand-blue-600: #03a4b7;
+    --color-brand-blue-700: #0a8294;
+    --color-brand-blue-800: #126878;
+    --color-brand-blue-900: #145665;
+    --color-brand-blue-950: #063a46;
 
     --padding-desktop: 4rem 12rem;
     --padding-tablet: 3rem 6rem;
