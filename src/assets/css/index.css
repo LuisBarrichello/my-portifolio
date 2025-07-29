@@ -65,9 +65,6 @@
         #6518b4
     );
 
-    --bg-gradient-footer: linear-gradient(180deg, var(--dark-20) 1%, var(--dark-10) 100%);
-
-    /* https://uicolors.app/create */
     --color-brand-blue-50: #ebfffe;
     --color-brand-blue-100: #ceffff;
     --color-brand-blue-200: #a2fdff;
