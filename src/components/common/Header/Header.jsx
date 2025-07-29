@@ -30,11 +30,11 @@ function Header() {
                         href="https://www.linkedin.com/in/luisgabrielbarrichello/"
                         target="_blank"
                         rel="noreferrer"
-                        className="flex items-center gap-x-2 text-xl md:text-2xl font-bold">
-                        <span className="bg-gray-800 dark:bg-white text-white dark:text-gray-900 px-2 py-0.5 rounded-md">
+                        className="flex items-center gap-x-2 text-xl md:text-2xl font-extrabold">
+                        <span className="font-poppins bg-gray-800 dark:bg-white text-white dark:text-gray-900 px-2 py-0.5 rounded-md">
                             LGB
                         </span>
-                        <span className="text-gray-500 dark:text-gray-400">
+                        <span className="font-poppins text-gray-500 dark:text-gray-400">
                             .dev
                         </span>
                     </a>
