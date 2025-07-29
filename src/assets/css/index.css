@@ -65,7 +65,6 @@
         #6518b4
     );
 
-    /* https://uicolors.app/create */
     --color-brand-blue-50: #ebfffe;
     --color-brand-blue-100: #ceffff;
     --color-brand-blue-200: #a2fdff;
@@ -78,7 +77,7 @@
     --color-brand-blue-900: #145665;
     --color-brand-blue-950: #063a46;
 
-    --padding-desktop: 4rem 12rem;
-    --padding-tablet: 3rem 6rem;
-    --padding-mobile: 2.6rem;
+    --padding-desktop: 2.4rem 6.4rem;
+    --padding-tablet: 2rem 4rem;
+    --padding-mobile: 1.5rem;
 }
