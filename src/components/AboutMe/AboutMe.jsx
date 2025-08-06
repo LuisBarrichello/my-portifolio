@@ -31,9 +31,9 @@ function AboutMe() {
                 id="about-me"
                 className="bg-gray-50 dark:bg-dark-20 p-mobile md:p-tablet lg:p-desktop">
                 <div className="w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-center">
-                    <div className="lg:col-span flex justify-center">
-                        <div className="relative w-72 h-72 lg:w-80 lg:h-80 group">
-                            <div className="absolute -inset-1 bg-gradient-to-bl from-brand-purple to-brand-blue rounded-xl blur-md opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
+                    <div className="lg:col-span-2 flex justify-center">
+                        <div className="relative w-full max-w-xs sm:max-w-sm lg:max-w-md group">
+                            <div className="absolute aspect-square -inset-1 bg-gradient-to-bl from-brand-purple to-brand-blue rounded-xl blur-md opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
                             <img
                                 src={PhotoMe}
                                 alt="Foto de perfil de Luís Gabriel Barrichello"

@@ -11,7 +11,7 @@ export const aboutMeText = [
                 text: 'transformar suas ideias em produtos digitais de alta performance',
                 bold: true,
             },
-            '. Com expertise em Java/Spring e React, eu construo a solução completa para o seu negócio: desde ',
+            '. Com expertise em Java, Spring Boot, Banco de dados relacionais e não relacionais, e Javascript, React, Tailwind. Eu construo a solução completa para o seu negócio: desde ',
             {
                 text: 'APIs seguras e escaláveis até interfaces de usuário modernas e intuitivas.',
                 bold: true,
@@ -38,7 +38,7 @@ export const aboutMeText = [
         id: 4,
         parts: [
             {
-                text: 'Vamos conversar sobre como posso te ajudar a tirar seu projeto do papel ?',
+                text: 'Vamos conversar sobre como posso te ajudar a tirar o seu projeto do papel?',
                 bold: true,
             },
         ],
