@@ -11,7 +11,7 @@
             "JUnit"
         ],
         "homepage": "",
-        "html_url_github": "https://github.com/LuisBarrichello/bar-optimization-system",
+        "url_github": "https://github.com/LuisBarrichello/bar-optimization-system",
         "featured": true,
         "case_study": {
             "problem": "O desafio era reduzir o desperdício de matéria-prima em uma empresa de aço, otimizando o processo de corte de vergalhões de 12 metros para minimizar perdas financeiras.",
@@ -29,7 +29,7 @@
             "JavaScript"
         ],
         "homepage": "https://landing-page-nutricionista-guilherme-moras.vercel.app/",
-        "html_url_github": "https://github.com/LuisBarrichello/Landing-Page---Nutricionista-Guilherme-Moras",
+        "url_github": "https://github.com/LuisBarrichello/Landing-Page---Nutricionista-Guilherme-Moras",
         "featured": true, 
         "case_study": {
             "problem": "O cliente, um nutricionista, possuía um site desatualizado, com baixa performance e que não refletia sua nova identidade visual focada em nutrição esportiva.",
@@ -48,7 +48,7 @@
             "Pandas"
         ],
         "homepage": "",
-        "html_url_github": "https://github.com/LuisBarrichello/python-erp-automation-suite",
+        "url_github": "https://github.com/LuisBarrichello/python-erp-automation-suite",
         "featured": true,
         "case_study": {
             "problem": "Um processo administrativo manual e demorado de impressão de documentos de produção estava consumindo horas de trabalho da equipe, sendo um gargalo que aumentava conforme a demanda.",
@@ -66,7 +66,7 @@
             "MySQL"
         ],
         "homepage": "",
-        "html_url_github": "https://github.com/LuisBarrichello/ecommerce-api-springboot",
+        "url_github": "https://github.com/LuisBarrichello/ecommerce-api-springboot",
         "featured": false,
         "case_study": {
             "problem": "",
@@ -84,7 +84,7 @@
             "Bootstrap"
         ],
         "homepage": "https://steel-sales-calculator.vercel.app/",
-        "html_url_github": "https://github.com/LuisBarrichello/SteelSalesCalculator",
+        "url_github": "https://github.com/LuisBarrichello/SteelSalesCalculator",
         "featured": false,
         "case_study": {
             "problem": "",
@@ -102,7 +102,7 @@
             "Spring Boot"
         ],
         "homepage": "",
-        "html_url_github": "https://github.com/LuisBarrichello/Challenge-API-REST-ForumHub",
+        "url_github": "https://github.com/LuisBarrichello/Challenge-API-REST-ForumHub",
         "featured": false,
         "case_study": {
             "problem": "",
@@ -120,7 +120,7 @@
             "CSS"
         ],
         "homepage": "https://best-browser-games-github-luisbarrichello.vercel.app/",
-        "html_url_github": "https://github.com/LuisBarrichello/BestBrowserGames",
+        "url_github": "https://github.com/LuisBarrichello/BestBrowserGames",
         "featured": false,
         "case_study": {
             "problem": "",
@@ -138,7 +138,7 @@
             "JavaScript"
         ],
         "homepage": "https://task-master-cyan.vercel.app/login.html",
-        "html_url_github": "https://github.com/LuisBarrichello/ToDo-List?tab=readme-ov-file",
+        "url_github": "https://github.com/LuisBarrichello/ToDo-List?tab=readme-ov-file",
         "featured": false,
         "case_study": {
             "problem": "",
@@ -156,7 +156,7 @@
             "Javascript"
         ],
         "homepage": "https://onerbreno.github.io/orbit-trips/",
-        "html_url_github": "https://github.com/onerbreno/orbit-trips",
+        "url_github": "https://github.com/onerbreno/orbit-trips",
         "featured": false,
         "case_study": {
             "problem": "",
@@ -173,7 +173,7 @@
             "CSS3"
         ],
         "homepage": "https://luisbarrichello.github.io/7DaysOfCode-pagina-contratacoes/",
-        "html_url_github": "https://github.com/LuisBarrichello/7DaysOfCode-pagina-contratacoes",
+        "url_github": "https://github.com/LuisBarrichello/7DaysOfCode-pagina-contratacoes",
         "featured": false,
         "case_study": {
             "problem": "",
@@ -191,7 +191,7 @@
             "JavaScript"
         ],
         "homepage": "",
-        "html_url_github": "https://github.com/LuisBarrichello/boracodar",
+        "url_github": "https://github.com/LuisBarrichello/boracodar",
         "featured": false,
         "case_study": {
             "problem": "",
