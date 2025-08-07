@@ -21,11 +21,15 @@ function Projects() {
 
     return (
         <section id="projects" className="container-projects hidden">
-            <h2 className="title-section">projetos</h2>
+            <h2
+                id="title-section"
+                className="title-section">
+                Projetos
+            </h2>
             {projectsData.length === 0 ? (
                 <Loader itensLoad={'projetos'}></Loader>
             ) : (
-                <div className="projects hidden">
+                <div id="projects-container" className="projects hidden">
                     {projectsData &&
                         projectsData
                             .slice(0, visibleProjects)

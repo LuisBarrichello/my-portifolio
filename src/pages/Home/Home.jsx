@@ -22,9 +22,9 @@ function Home() {
             <Header></Header>
             <Hero></Hero>
             <AboutMe></AboutMe>
+            <Projects></Projects>
             <Skills></Skills>
             <Experience></Experience>
-            <Projects></Projects>
             <MyServices></MyServices>
             <Footer></Footer>
         </>
