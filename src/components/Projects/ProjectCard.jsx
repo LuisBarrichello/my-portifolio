@@ -3,7 +3,7 @@ import IconGithub from '../../assets/img/github.svg?react';
 import IconLink from '../../assets/img/link.svg?react';
 import Button from '../common/Buttons/Button';
 
-function ProjectCard({ project }) {
+function ProjectCard({ project, onOpenModal }) {
     const {
         image_url,
         title,
@@ -11,11 +11,12 @@ function ProjectCard({ project }) {
         technologies,
         url_github,
         homepage,
+        featured,
     } = project;
 
     return (
         <div className="bg-white dark:bg-dark-20 rounded-lg overflow-hidden shadow-md hover:shadow-xl dark:shadow-black/30 transition-all duration-300 group flex flex-col animate-fade-in">
-            <figure className="aspect-video overflow-hidden">
+            <figure className="relative aspect-video overflow-hidden">
                 {image_url && (
                     <img
                         src={image_url}
@@ -23,6 +24,16 @@ function ProjectCard({ project }) {
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         loading="lazy"
                     />
+                )}
+
+                {featured && (
+                    <div
+                        className="absolute top-0 left-0 bg-gradient-to-br from-brand-purple to-brand text-white text-xs font-bold px-5 py-2.5 flex items-center gap-1.5"
+                        style={{
+                            clipPath: 'polygon(0 0, 100% 0, 85% 100%, 0 100%)',
+                        }}>
+                        <span className="font-bold">DESTAQUE</span>
+                    </div>
                 )}
             </figure>
             <div className="p-6 flex flex-col flex-grow">
@@ -45,6 +56,15 @@ function ProjectCard({ project }) {
                     )}
                 </div>
                 <div className="mt-auto pt-4 border-t border-gray-200 dark:border-gray-700 flex flex-col sm:flex-row gap-4">
+                    {featured && (
+                        <Button
+                            className="border-2"
+                            variant={''}
+                            content="Ver Estudo de Caso"
+                            onClick={onOpenModal}
+                        />
+                    )}
+
                     <Button
                         target="target"
                         variant={'purple-blue'}
@@ -66,6 +86,8 @@ function ProjectCard({ project }) {
                             aria-label={`Visualizar projeto ${title}`}
                         />
                     )}
+
+                    {featured && <></>}
                 </div>
             </div>
         </div>
@@ -80,7 +102,9 @@ ProjectCard.propTypes = {
         technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
         url_github: PropTypes.string.isRequired,
         homepage: PropTypes.string,
+        featured: PropTypes.bool,
     }).isRequired,
+    onOpenModal: PropTypes.func.isRequired,
 };
 
 export default ProjectCard;

@@ -5,21 +5,27 @@ import projectsData from '../../data/projects.json';
 import Button from '../common/Buttons/Button';
 import Loader from '../common/Loader/Loader';
 import ProjectCard from './ProjectCard';
+import ProjectModal from './ProjectModal';
 import './Projects.css';
 
 function Projects() {
-    const [visibleProjects, setVisibleProjects] = useState(4);
+    const [visibleProjects, setVisibleProjects] = useState(6);
+    const [selectedProject, setSelectedProject] = useState(null);
 
     const loadMoreProjects = () => {
         setVisibleProjects((prevVisibleProjects) => prevVisibleProjects + 6);
     };
 
     const unloadPreviousProjects = () => {
-        setVisibleProjects(4);
+        setVisibleProjects(6);
     };
 
+    const openModal = (project) => setSelectedProject(project);
+    const closeModal = () => setSelectedProject(null);
+
     return (
-        <section id="projects" className="container-projects hidden">
+        <> 
+            <section id="projects" className="container-projects hidden">
             <h2
                 id="title-section"
                 className="title-section">
@@ -37,6 +43,7 @@ function Projects() {
                                     <ProjectCard
                                         key={project.title}
                                         project={project}
+                                        onOpenModal={() => openModal(project)}
                                     />
                                 );
                             })}
@@ -61,6 +68,12 @@ function Projects() {
                     alt={'botao idicando para ocultar projetos'}></Button>
             )}
         </section>
+
+        {
+        selectedProject && (
+            <ProjectModal project={selectedProject} onClose={closeModal} />
+        )}
+        </>
     );
 }
 
