@@ -18,14 +18,13 @@ function ProjectModal({ project, onClose }) {
         <>
             <div
                 className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4"
-                onClick={onClose} 
+                onClick={onClose}
                 role="dialog"
                 aria-modal="true"
                 aria-labelledby="modal-title">
                 <div
                     className="bg-white dark:bg-dark-20 rounded-lg shadow-xl max-w-3xl w-full p-8 relative"
-                    onClick={(e) => e.stopPropagation()} 
-                >
+                    onClick={(e) => e.stopPropagation()}>
                     <button
                         onClick={onClose}
                         className="absolute top-4 right-4 text-gray-500 hover:text-gray-900 dark:hover:text-white"
@@ -50,24 +49,26 @@ function ProjectModal({ project, onClose }) {
                         {project.title}
                     </h2>
 
-                    <div className="space-y-6 text-gray-700 dark:text-gray-300">
-                        <div>
-                            <h3 className="font-semibold text-lg mb-2 text-gray-800 dark:text-gray-100">
-                                O Problema
-                            </h3>
-                            <p>{project.case_study.problem}</p>
-                        </div>
-                        <div>
-                            <h3 className="font-semibold text-lg mb-2 text-gray-800 dark:text-gray-100">
-                                A Solução
-                            </h3>
-                            <p>{project.case_study.solution}</p>
-                        </div>
-                        <div>
-                            <h3 className="font-semibold text-lg mb-2 text-gray-800 dark:text-gray-100">
-                                Aprendizados
-                            </h3>
-                            <p>{project.case_study.learnings}</p>
+                    <div className="overflow-y-auto pr-4">
+                        <div className="space-y-6 text-gray-700 dark:text-gray-300">
+                            <div>
+                                <h3 className="font-semibold text-lg mb-2 text-gray-800 dark:text-gray-100">
+                                    O Problema
+                                </h3>
+                                <p>{project.case_study.problem}</p>
+                            </div>
+                            <div>
+                                <h3 className="font-semibold text-lg mb-2 text-gray-800 dark:text-gray-100">
+                                    A Solução
+                                </h3>
+                                <p>{project.case_study.solution}</p>
+                            </div>
+                            <div>
+                                <h3 className="font-semibold text-lg mb-2 text-gray-800 dark:text-gray-100">
+                                    Aprendizados
+                                </h3>
+                                <p>{project.case_study.learnings}</p>
+                            </div>
                         </div>
                     </div>
                 </div>

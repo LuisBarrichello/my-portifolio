@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import IconGithub from '../../assets/img/github.svg?react';
 import IconLink from '../../assets/img/link.svg?react';
+import IconDocument from '../../assets/img/document.svg?react';
 import Button from '../common/Buttons/Button';
 
 function ProjectCard({ project, onOpenModal }) {
@@ -58,8 +59,9 @@ function ProjectCard({ project, onOpenModal }) {
                 <div className="mt-auto pt-4 border-t border-gray-200 dark:border-gray-700 flex flex-col sm:flex-row gap-4">
                     {featured && (
                         <Button
-                            className="border-2"
-                            variant={''}
+                            IconComponent={IconDocument}
+                            altImage="Icone indicando um Link clicavel - Ver Estudo de Caso"
+                            variant={'blue-red'}
                             content="Ver Estudo de Caso"
                             onClick={onOpenModal}
                         />

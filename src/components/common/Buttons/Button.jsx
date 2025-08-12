@@ -12,6 +12,8 @@ const buttonShellVariants = cva(
                     'bg-gradient-to-bl from-brand-purple to-brand-blue',
                 'red-purple':
                     'bg-gradient-to-bl from-brand-red to-brand-purple-dark',
+                'blue-red':
+                    'bg-gradient-to-bl dark:from-brand-blue from-brand-blue to-brand-purple-dark',
                 outline: 'bg-gray-300 dark:bg-gray-700',
             },
         },
@@ -27,6 +29,8 @@ const buttonCoreVariants = cva(
                     'bg-white text-gray-900 dark:bg-dark-10 dark:text-white',
                 'red-purple':
                     'bg-white text-gray-900 dark:bg-dark-10 dark:text-white',
+                'blue-red':
+                    'bg-white/20 text-white dark:bg-dark-10/70 dark:text-white',
                 outline:
                     'bg-white text-gray-800 dark:bg-dark-10 dark:text-white',
             },
@@ -58,7 +62,7 @@ function Button({
                 {IconComponent && (
                     <IconComponent aria-label={altImage} className="w-5 h-5" />
                 )}
-                <span>{content}</span>
+                <span className="text-sm">{content}</span>
             </div>
         </Comp>
     );

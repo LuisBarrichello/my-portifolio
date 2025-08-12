@@ -17,7 +17,8 @@
             "problem": "O desafio era reduzir o desperdício de matéria-prima em uma empresa de aço, otimizando o processo de corte de vergalhões de 12 metros para minimizar perdas financeiras.",
             "solution": "Desenvolvi uma aplicação desktop em JavaFX que automatiza todo o fluxo: o sistema importa as listas de corte de um PDF, aplica o algoritmo 'Best Fit Decreasing' para calcular o plano de corte mais eficiente e, por fim, gera relatórios detalhados em PDF e Excel para a equipe de produção.",
             "learnings": "Neste projeto, aprofundei meus conhecimentos em algoritmos de otimização e no desenvolvimento de interfaces gráficas com JavaFX. Ganhei experiência prática com bibliotecas robustas como Apache PDFBox e POI para manipulação de arquivos, além de consolidar minhas habilidades em testes unitários com JUnit para garantir a confiabilidade do algoritmo."
-        }
+        },
+        "category": "Back End"
     },
     {
         "title": "Landing Page para Nutricionista",
@@ -35,7 +36,8 @@
             "problem": "O cliente, um nutricionista, possuía um site desatualizado, com baixa performance e que não refletia sua nova identidade visual focada em nutrição esportiva.",
             "solution": "Desenvolvi uma landing page totalmente nova a partir do zero, utilizando React e Tailwind CSS para criar um design moderno, rápido e totalmente responsivo. A estrutura foi pensada para guiar o usuário e facilitar a conversão, alinhada às novas inspirações e ao público-alvo do cliente.",
             "learnings": "Este foi meu primeiro projeto aplicando Tailwind CSS em um contexto profissional, o que solidificou minhas habilidades no framework. Aprimorei também minhas práticas em componentização com React e na criação de layouts 'mobile-first'."
-        }
+        },
+        "category": "Front End"
     },
     {
         "title": "Automação de Processos (RPA) com Python",
@@ -54,12 +56,13 @@
             "problem": "Um processo administrativo manual e demorado de impressão de documentos de produção estava consumindo horas de trabalho da equipe, sendo um gargalo que aumentava conforme a demanda.",
             "solution": "Criei uma suíte de automação com uma interface central construída em CustomTkinter. O robô realiza o login no sistema, navega pelas janelas e pop-ups com PyAutoGUI, lê os dados necessários de planilhas Excel com Pandas e gerencia todo o processo de impressão de forma autônoma, liberando a equipe para tarefas de maior valor.",
             "learnings": "Este projeto foi uma imersão em Robotic Process Automation (RPA). Desenvolvi habilidades em bibliotecas de automação de GUI, manipulação de dados com Pandas e na criação de interfaces de usuário simples com CustomTkinter para gerenciar os scripts."
-        }
+        },
+        "category": "Automação"
     },
     {
         "title": "E-commerce - API REST com Spring Boot",
         "description": "API RESTful de E-commerce desenvolvida com Spring Boot, oferecendo funcionalidades de autenticação, gestão de produtos, pedidos e integração com métodos de pagamento, e pretendo criar chat em tempo real entre lojista e clientes.",
-        "image_url": "../../../assets/img/projects/api.svg",
+        "image_url": "../../../assets/img/projects/api.png",
         "technologies": [
             "Java",
             "Spring Boot",
@@ -72,7 +75,8 @@
             "problem": "",
             "solution": "",
             "learnings": ""
-        }
+        },
+        "category": "Back End"
     },
     {
         "title": "Steel Sales Calculator",
@@ -90,12 +94,13 @@
             "problem": "",
             "solution": "",
             "learnings": ""
-        }
+        },
+        "category": "Front End"
     },
     {
         "title": "FórumHub - API REST com Spring",
         "description": "Este é o FórumHub, um projeto de API REST desenvolvido com Spring para gerenciar tópicos de discussão em um fórum. A API permite a criação, listagem, atualização e exclusão de tópicos, usuários, cursos e respostas, seguindo as melhores práticas do modelo REST.",
-        "image_url": "../../../assets/img/projects/api.svg",
+        "image_url": "../../../assets/img/projects/api.png",
         "technologies": [
             "Java",
             "MySQL",
@@ -108,7 +113,8 @@
             "problem": "",
             "solution": "",
             "learnings": ""
-        }
+        },
+        "category": "Back End"
     },
     {
         "title": "Best Browser Games",
@@ -126,7 +132,8 @@
             "problem": "",
             "solution": "",
             "learnings": ""
-        }
+        },
+        "category": "Front End"
     },
     {
         "title": "To-Do List",
@@ -144,7 +151,8 @@
             "problem": "",
             "solution": "",
             "learnings": ""
-        }
+        },
+        "category": "Front End"
     },
     {
         "title": "Orbit Trips",
@@ -162,7 +170,8 @@
             "problem": "",
             "solution": "",
             "learnings": ""
-        }
+        },
+        "category": "Front End"
     },
     {
         "title": "Landing page - página de contratações",
@@ -179,7 +188,8 @@
             "problem": "",
             "solution": "",
             "learnings": ""
-        }
+        },
+        "category": "Front End"
     },
     {
         "title": "Projetos #boraCodar da Rocketseat",
@@ -197,6 +207,7 @@
             "problem": "",
             "solution": "",
             "learnings": ""
-        }
+        },
+        "category": "Front End"
     }
 ]
