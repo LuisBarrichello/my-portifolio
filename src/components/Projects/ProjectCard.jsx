@@ -61,7 +61,7 @@ function ProjectCard({ project, onOpenModal }) {
                         <Button
                             IconComponent={IconDocument}
                             altImage="Icone indicando um Link clicavel - Ver Estudo de Caso"
-                            variant={'blue-red'}
+                            variant={'ghost'}
                             content="Ver Estudo de Caso"
                             onClick={onOpenModal}
                         />
