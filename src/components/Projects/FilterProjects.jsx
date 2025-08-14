@@ -15,7 +15,7 @@ function FilterProjects({ categories, selected, onSelect }) {
                         {
                             'bg-brand text-white shadow-md':
                                 selected === category,
-                            'bg-gray-200 dark:bg-dark-20 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-700':
+                            'bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-300 dark:hover:bg-gray-700':
                                 selected !== category,
                         },
                     )}
