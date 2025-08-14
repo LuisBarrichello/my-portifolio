@@ -32,6 +32,12 @@
     }
 }
 
+@layer utilities {
+    .title-section {
+        @apply font-poppins font-bold text-3xl md:text-4xl text-gray-900 dark:text-white
+    }
+}
+
 @theme {
     --color-brand: #00d2df;
     --color-dark-10: #121212;
