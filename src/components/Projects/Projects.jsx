@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useRef } from 'react';
 import projectsData from '../../data/projects.json';
 import Button from '../common/Buttons/Button';
 import ProjectCard from './ProjectCard';
@@ -11,6 +11,7 @@ function Projects() {
     const [visibleProjects, setVisibleProjects] = useState(6);
     const [selectedProject, setSelectedProject] = useState(null);
     const [selectedCategory, setSelectedCategory] = useState('Todos');
+    const projectsSectionRef = useRef(null);
 
     const categories = useMemo(
         () => ['Todos', ...new Set(projectsData.map((p) => p.category))],
@@ -31,6 +32,7 @@ function Projects() {
 
     const unloadPreviousProjects = () => {
         setVisibleProjects(6);
+        projectsSectionRef.current?.scrollIntoView({ behaivor: 'smooth' });
     };
 
     const openModal = (project) => setSelectedProject(project);
@@ -40,6 +42,7 @@ function Projects() {
         <>
             <section
                 id="projects"
+                ref={projectsSectionRef}
                 className="p-mobile md:p-tablet lg:p-desktop bg-gray-50 dark:bg-dark-20">
                 <div className="w-full max-w-7xl mx-auto flex flex-col items-center">
                     <h2 id="title-section" className="title-section">
