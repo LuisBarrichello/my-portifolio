@@ -1,37 +1,58 @@
 [
     {
-        "company": "Comercial Goldoni",
-        "office": "Auxiliar de Cronoanalista",
-        "description": "Analisar previsões de venda e planejar o plano de produção.; Conferir e liberar as ordens de produção.; Gerenciar os indicadores de PCP.; Alimentar planilhas.; Lançar no sistema informações dos produtos acabados.; Fazer análise da capacidade de produção.; Controlar e definir estoque de matéria-prima e insumos.",
-        "start": "Jul de 2022",
-        "finish": "Atual"
+        "company": "Freelancer",
+        "role": "Desenvolvedor Web",
+        "period": "Dez 2024 – Presente",
+        "location": "Remoto",
+        "technologies": [
+            "React.js",
+            "TailwindCSS"
+        ],
+        "details": [
+            "Desenvolvi uma Landing Page para um nutricionista, utilizando React.js e Tailwind, focada em geração de leads e presença digital."
+        ]
     },
     {
         "company": "Comercial Goldoni",
-        "office": "Vendedor",
-        "description": "Atender clientes e realizar orçamentos e vendas, via tele-vendas, whatsapp, e-mail ou pessoalmente.; Identificar as necessidades dos clientes, apresentando soluções em ferro e aço.; Análise Crítica.; Prospectar, cadastrar e fidelizar novos clientes.; Manter clientes ativos.; Preencher documentos, formulários, e planilhas.; Suporte pós-vendas,; Características envolvente nesses processos: Inteligência Emocional, Caráter, Integridade, Ética, Palavra, Gentileza, Paciência, Harmonia nos relacionamentos, Cuidado com os clientes, Habilidades comunicativas.",
-        "start": "Set de 2021",
-        "finish": "Jun de 2022"
+        "role": "Auxiliar de PCP (com atuação em Desenvolvimento)",
+        "period": "Jul 2022 – Presente",
+        "location": "Presencial",
+        "technologies": [
+            "Java",
+            "JavaFX",
+            "Python",
+            "React.js",
+            "TypeScript",
+            "Bootstrap"
+        ],
+        "details": [
+            "Desenvolvi um web app para cálculo de peso de materiais de construção (React.js, TypeScript, Bootstrap), reduzindo em 40% o tempo gasto em cálculos manuais.",
+            "Criei um sistema desktop (Java, JavaFX) para otimizar o aproveitamento de sobras de materiais, reduzindo o desperdício.",
+            "Implementei uma automação em Python para impressão de documentos, que diminuiu o tempo gasto na atividade em 45%.",
+            "Automatizei planilhas do Excel com lógicas complexas, aumentando a produtividade da equipe em 20%.",
+            "Gerenciei indicadores de PCP, análise da capacidade de produção e controle de estoque de matéria-prima."
+        ]
     },
     {
         "company": "Comercial Goldoni",
-        "office": "Auxiliar de faturamento",
-        "description": "Tratamento de documentos variados, conferindo, recebendo, enviando, distribuindo e classificando-os conforme orientações.; Execução de serviços gerais de escritório cumprindo todo o procedimento necessário referente aos mesmos.; Preencher documentos, formulários, digitar textos e planilhas.; Efetuar e conferir cálculos.; Verificar e cumprir prazos estabelecidos.; Cumprir solicitações de trabalho de gerentes e orientadores.; Execução serviços de apoio nas áreas de administração, vendas, financeira, PCP e Logística.",
-        "start": "Set de 2020",
-        "finish": "Set de 2021"
-    },
-    {
-        "company": "E-commerce Brinquei Brinquedos",
-        "office": "Auxiliar administrativo",
-        "description": "Serviço de atendimento ao cliente / Cadastro de produtos nos ecommerces.; SAC, dar suporte e soluções coerentes, intermediador entre clientes, transportadora e fornecedores, cotações de fretes e controle de tais processos.; Cadastro de produtos, criar descritivos de produtos.; Utilização de planilha de cálculos.",
-        "start": "Jun de 2020",
-        "finish": "Set 2020"
+        "role": "Vendedor",
+        "period": "Set 2021 – Mai 2022",
+        "location": "Presencial",
+        "technologies": [],
+        "details": [
+            "Responsável por todo o ciclo de vendas, desde o atendimento e orçamentação até o suporte pós-venda.",
+            "Desenvolvi uma abordagem consultiva para identificar as necessidades dos clientes e apresentar soluções de valor, resultando em maior fidelização."
+        ]
     },
     {
         "company": "Comercial Goldoni",
-        "office": "Auxiliar administrativo",
-        "description": "Auxílio e aprimoramento nos setores como comercial, PCP, faturamento.; Preenchimento de planilhas de controle diário com dados sobre entregas.; Digitalização e organização de arquivos.",
-        "start": "Mar de 2019",
-        "finish": "Fev de 2020"
+        "role": "Auxiliar de Faturamento",
+        "period": "Set 2020 – Set 2021",
+        "location": "Presencial",
+        "technologies": [],
+        "details": [
+            "Gerenciei a emissão de notas fiscais e a liberação de pedidos, garantindo a precisão e a conformidade dos processos.",
+            "Realizei o tratamento e a organização de documentos variados, otimizando o fluxo de trabalho administrativo."
+        ]
     }
 ]
