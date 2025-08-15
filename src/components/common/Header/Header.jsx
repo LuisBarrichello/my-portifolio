@@ -13,10 +13,10 @@ function Header() {
     const navLinks = [
         { to: 'home', label: 'Home' },
         { to: 'about-me', label: 'Sobre mim' },
-        { to: 'skills', label: 'Conhecimentos' },
-        { to: 'experience', label: 'Experiência' },
         { to: 'projects', label: 'Projetos' },
+        { to: 'skills', label: 'Conhecimentos' },
         { to: 'my-services', label: 'Serviços' },
+        { to: 'experience', label: 'Experiência' },
     ];
 
     const navLinkClasses =

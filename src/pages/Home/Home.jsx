@@ -24,8 +24,8 @@ function Home() {
             <AboutMe></AboutMe>
             <Projects></Projects>
             <Skills></Skills>
-            <Experience></Experience>
             <MyServices></MyServices>
+            <Experience></Experience>
             <Footer></Footer>
         </>
     );
