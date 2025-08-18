@@ -7,6 +7,7 @@ import Projects from "../../components/Projects/Projects"
 import Footer from "../../components/common/Footer/Footer"
 
 import MyServices from "../../components/MyServices/MyServices"
+import CTA from "../../components/CTA/CTA"
 
 /**
  * @function Home
@@ -26,6 +27,7 @@ function Home() {
             <Skills></Skills>
             <MyServices></MyServices>
             <Experience></Experience>
+            <CTA></CTA>
             <Footer></Footer>
         </>
     );
