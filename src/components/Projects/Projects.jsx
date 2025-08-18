@@ -6,6 +6,7 @@ import ProjectModal from './ProjectModal';
 import FilterProjects from './FilterProjects';
 import IconArrowDown from '../../assets/img/arrow-down.svg?react';
 import IconArrowUp from '../../assets/img/arrow-up.svg?react';
+import IconChat from '../../assets/img/icon-chat.svg?react';
 
 function Projects() {
     const [visibleProjects, setVisibleProjects] = useState(6);
@@ -76,6 +77,28 @@ function Projects() {
                                         />
                                     );
                                 })}
+                    </div>
+
+                    <div className="mt-16 text-center">
+                        <h3 className="font-poppins text-2xl font-bold text-gray-900 dark:text-white">
+                            Gostou do que viu?
+                        </h3>
+                        <p className="mt-2 text-gray-600 dark:text-gray-400">
+                            Vamos conversar sobre como posso ajudar no seu
+                            próximo projeto.
+                        </p>
+                        <div className="mt-6">
+                            <Button
+                                target="target"
+                                variant={'ghost'}
+                                className=""
+                                content="Vamos conversar?"
+                                altImage="icon chat"
+                                IconComponent={IconChat}
+                                pathLink="https://wa.me/15997507932?text=Olá%20Luis,%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto!"
+                                rel="noopener noreferrer"
+                            />
+                        </div>
                     </div>
 
                     <div className="mt-12">
