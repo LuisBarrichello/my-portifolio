@@ -1,31 +1,64 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', 'Montserrat' sans-serif;
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply bg-white text-gray-800 dark:bg-dark-10 dark:text-white font-sans text-base;
+        @apply font-sans text-base;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-poppins;
+    }
+
+    p,
+    span,
+    li {
+        @apply font-inter;
+    }
+
+    button {
+        @apply cursor-pointer;
+    }
 }
 
-:root {
-    font-size: 62.5%;
+@layer utilities {
+    .title-section {
+        @apply font-poppins font-bold text-3xl md:text-4xl text-gray-900 dark:text-white mb-4 text-center
+    }
+}
 
-    /* Colors */
-    /* Brand Colours */
-    --brand-color: #00d2df;
+@theme {
+    --color-brand: #00d2df;
+    --color-dark-10: #121212;
+    --color-dark-20: #151515;
+    --color-dark-30: #c4c4c4;
+    --color-text: #e0e0e0;
+    --color-gray: #222;
 
-    /* Dark Scale */
-    --dark-10: #121212;
-    --dark-20: #151515;
-    --dark-30: #c4c4c4;
-    --text-color: #E0E0E0;
-    --gray: #222;
-    --white: #ffffff;
+    --font-poppins: 'Poppins', sans-serif;
+    --font-inter: 'Inter', sans-serif;
 
-    /* Color System */
-    --support-01: #2962ff;
-    --support-02: #0bb07b;
-    --support-03: #ffce52;
-    --support-04: #f03d3d;
-    --support-05: #e0e0e0;
+    --color-support-01: #2962ff;
+    --color-support-02: #0bb07b;
+    --color-support-03: #ffce52;
+    --color-support-04: #f03d3d;
+    --color-support-05: #e0e0e0;
+
+    --color-brand-purple: #9358f7;
+    --color-brand-red: #d24074;
+    --color-brand-blue: #10d7e2;
+    --color-brand-purple-dark: #6518b4;
 
     --button-purple-blue-gradient: linear-gradient(
         to bottom left,
@@ -38,58 +71,19 @@
         #6518b4
     );
 
-    /* https://uicolors.app/create */
-    --robins-egg-blue-100: #ceffff;
-    --robins-egg-blue-50: #ebfffe;
-    --robins-egg-blue-200: #a2fdff;
-    --robins-egg-blue-300: #63f8fd;
-    --robins-egg-blue-400: #1ceaf4;
-    --robins-egg-blue-500: #00d2df;
-    --robins-egg-blue-600: #03a4b7;
-    --robins-egg-blue-700: #0a8294;
-    --robins-egg-blue-800: #126878;
-    --robins-egg-blue-900: #145665;
-    --robins-egg-blue-950: #063a46;
+    --color-brand-blue-50: #ebfffe;
+    --color-brand-blue-100: #ceffff;
+    --color-brand-blue-200: #a2fdff;
+    --color-brand-blue-300: #63f8fd;
+    --color-brand-blue-400: #1ceaf4;
+    --color-brand-blue-500: #00d2df;
+    --color-brand-blue-600: #03a4b7;
+    --color-brand-blue-700: #0a8294;
+    --color-brand-blue-800: #126878;
+    --color-brand-blue-900: #145665;
+    --color-brand-blue-950: #063a46;
 
-    --padding-desktop: 4rem 12rem;
-    --padding-tablet: 3rem 6rem;
-    --padding-mobile: 2.6rem;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-button {
-    cursor: pointer;
-    all: unset;
-}
-
-body {
-    font-size: 1.6rem;
-    background-color: var(--dark-10);
-    color: var(--white);
-    font-family: 'Inter';
-}
-
-/* class utils */
-.title-section {
-    color: var(--white);
-    font-size: 2.4rem;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-@media (max-width: 480px) {
-    .title-section, .subtitle-section{
-        width: 100%;
-        text-align: center;
-    }
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-    .title-section, .subtitle-section{
-        width: 100%;
-        text-align: center;
-    }
+    --padding-desktop: 2.4rem 6.4rem;
+    --padding-tablet: 2rem 4rem;
+    --padding-mobile: 1.5rem;
 }
