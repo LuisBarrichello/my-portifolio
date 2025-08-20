@@ -11,8 +11,8 @@ function Experience() {
             id="experience"
             className="p-mobile md:p-tablet lg:p-desktop md:px-24 bg-white dark:bg-dark-10"
             aria-labelledby="experience-heading">
-            <div className="w-full max-w-7xl mx-auto">
-                <h2 id="experience-heading" className="title-section mb-8!">
+            <div className="w-full max-w-7xl mx-auto min-h-[60vh] flex flex-col items-center">
+                <h2 id="experience-heading" className="title-section mb-12!">
                     Experiência Profissional
                 </h2>
 
@@ -23,7 +23,7 @@ function Experience() {
                                 key={exp.role + exp.company}
                                 onClick={() => setActiveIndex(index)}
                                 className={clsx(
-                                    'p-4 text-center md:text-left text-sm md:text-base transition-colors duration-300',
+                                    'p-8 text-center md:text-left text-sm md:text-base transition-colors duration-300',
                                     'md:whitespace-nowrap md:min-w-[200px]',
                                     {
                                         'bg-brand/10 text-brand border-brand border-b-4 md:border-b-0 md:border-l-4 -mb-0.5 md:-ml-1':
@@ -36,7 +36,7 @@ function Experience() {
                             </button>
                         ))}
                     </div>
-                    <div className="flex-grow animate-fade-in">
+                    <div className="flex-grow animate-fade-in flex flex-col gap-1">
                         <h3 className="font-poppins font-bold text-xl md:text-2xl text-gray-900 dark:text-white">
                             {activeExperience.role}{' '}
                         </h3>
