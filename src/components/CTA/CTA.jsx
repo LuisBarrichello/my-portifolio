@@ -6,7 +6,7 @@ function CTA() {
     return (
         <section
             id="cta"
-            className="p-mobile md:p-tablet lg:p-desktop relative overflow-hidden"
+            className="h-screen flex flex-col items-center justify-center p-mobile md:p-tablet lg:p-desktop relative overflow-hidden"
             role="region"
             aria-label="Call to Action">
             <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -24,7 +24,10 @@ function CTA() {
                 </div>
             </div>
 
-            <div className="relative z-10 w-full max-w-4xl mx-auto bg-white/80 dark:bg-dark-10/80 backdrop-blur-sm py-16 md:py-20 text-center">
+            <div className="relative z-10 w-full max-w-4xl mx-auto bg-white/80 dark:bg-dark-10/80 backdrop-blur-sm text-center 
+                    px-6 py-12 
+                    sm:px-8 sm:py-16 
+                    md:px-12 md:py-20">
                 <h2 className="title-section">
                     Vamos construir{' '}
                     <span className="text-brand">algo juntos?</span>
