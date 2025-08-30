@@ -23,7 +23,7 @@ function Experience() {
                                 key={exp.role + exp.company}
                                 onClick={() => setActiveIndex(index)}
                                 className={clsx(
-                                    'p-8 text-center md:text-left text-sm md:text-base transition-colors duration-300',
+                                    'w-full p-8 text-center md:text-left text-sm md:text-base transition-colors duration-300',
                                     'md:whitespace-nowrap md:min-w-[200px]',
                                     {
                                         'bg-brand/10 text-brand border-brand border-b-4 md:border-b-0 md:border-l-4 -mb-0.5 md:-ml-1':
