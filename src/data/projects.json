@@ -1,5 +1,30 @@
 [
     {
+        "title": "Sistema de Gestão do Museu Magma",
+        "description": "Sistema de gestão completo (ERP/PDV) construído para o Museu Magma. Inclui controle de inventário, ponto de venda (PDV), gerenciamento de clientes, usuários, permissões granulares e relatórios de lucratividade.",
+        "image_url": "../../../assets/img/projects/museu-magma-dashboard.png",
+        "technologies": [
+            "React",
+            "Django REST Framework",
+            "PostgreSQL",
+            "JavaScript (ES6+)",
+            "CSS (Responsive)",
+            "Python",
+            "Axios",
+            "Chart.js",
+            "JWT"
+        ],
+        "homepage": "https://sistemamuseumagma.vercel.app/",
+        "url_github": "https://github.com/LuisBarrichello/museu-magma-frontend",
+        "featured": true,
+        "case_study": {
+            "problem": "O museu utilizava um sistema monolítico antigo, lento e não responsivo, que dificultava o gerenciamento diário do inventário e das vendas, sem controle de permissões de acesso.",
+            "solution": "Refatoração completa da arquitetura. O backend foi recriado como uma API RESTful (Django/Python) e o frontend foi construído do zero como uma Single-Page Application (React), resultando em um sistema rápido, seguro e totalmente responsivo.",
+            "learnings": "Domínio em arquitetura de microsserviços, implementação de autenticação JWT com token refresh, criação de permissões granulares no backend (DRF), gerenciamento de estado global no frontend (React Context) e deploy completo de uma aplicação Full Stack em nuvem (Vercel, Render, Neon)."
+        },
+        "category": "Full Stack"
+    },
+    {
         "title": "Bar Optimization System",
         "description": "Aplicação desktop com interface gráfica simples, mas moderna, para otimização industrial de corte de vergalhões, minimizando desperdício e gerando relatórios em PDF/Excel.",
         "image_url": "../../../assets/img/projects/bar-optimization-system.png",
