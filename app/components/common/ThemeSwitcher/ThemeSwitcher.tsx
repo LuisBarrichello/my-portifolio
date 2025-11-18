@@ -1,7 +1,21 @@
+'use client'
 import { useTheme } from '../../../hooks/useTheme';
+import { useEffect, useState } from 'react';
 
 function ThemeSwitcher() {
     const [theme, toggleTheme] = useTheme();
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
+        setMounted(true);
+    }, []);
+
+    if (!mounted) {
+        return (
+            <button className="p-2 rounded-full w-10 h-10 bg-dark-20 opacity-0" />
+        );
+    }
 
     return (
         <button

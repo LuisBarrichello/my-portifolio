@@ -1,11 +1,12 @@
+'use client';
 import { useState } from 'react';
-import IconDownload from '../../assets/img/download-cloud.svg?react';
-import IconEmail from '../../assets/img/mail.svg?react';
-import PhotoMe from '../../assets/img/me.png';
-import curriculo from '../../data/curriculo.pdf';
+import IconDownload from '@/app/assets/icons/download-cloud.svg';
+import IconEmail from '@/app/assets/icons/mail.svg';
+import PhotoMe from '../../../public/assets/img/me.png';
 import Button from '../common/Buttons/Button';
 import { aboutMeText } from '../../data/data';
 import SocialLinks from '../common/SocialLinks/SocialLinks';
+import Image from 'next/image';
 
 function AboutMe() {
     const [copied, setCopied] = useState(false);
@@ -34,12 +35,11 @@ function AboutMe() {
                     <div className="lg:col-span-2 flex justify-center">
                         <div className="relative w-full max-w-xs sm:max-w-sm lg:max-w-md group">
                             <div className="absolute aspect-square -inset-1 bg-gradient-to-bl from-brand-purple to-brand-blue rounded-xl blur-md opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
-                            <img
+                            <Image
                                 src={PhotoMe}
                                 alt="Foto de perfil de Luís Gabriel Barrichello"
                                 className="relative w-full h-full object-cover rounded-xl shadow-lg group-hover:scale-105 transition-transform duration-300"
-                                loading="lazy"
-                                decoding="async"
+                                priority
                             />
                         </div>
                     </div>
@@ -77,13 +77,14 @@ function AboutMe() {
 
                         <div className="mt-8 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
                             <Button
+                                className={''}
                                 variant={'red-purple'}
                                 content={'Download CV'}
                                 IconComponent={IconDownload}
                                 altImage={
                                     'Icone indicando download do curriculo'
                                 }
-                                pathLink={curriculo}
+                                pathLink={'/curriculo.pdf'}
                                 target={'target'}
                                 download={true}
                             />

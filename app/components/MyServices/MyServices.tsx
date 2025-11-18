@@ -1,7 +1,7 @@
 import Button from '../common/Buttons/Button';
-import IconChat from '../../assets/img/icon-chat.svg?react';
-import IconCode from '../../assets/img/icon-tag-code.svg?react';
-import IconLogicPartition from '../../assets/img/icon-logic-partition.svg?react';
+import IconChat from '@/app/assets/icons/icon-chat.svg';
+import IconCode from '@/app/assets/icons/icon-tag-code.svg';
+import IconLogicPartition from '@/app/assets/icons/icon-logic-partition.svg';
 
 const servicesData = [
     {
