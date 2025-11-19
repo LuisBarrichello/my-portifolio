@@ -2,7 +2,7 @@
     {
         "title": "Sistema de Gestão do Museu Magma",
         "description": "Sistema de gestão completo (ERP/PDV) construído para o Museu Magma. Inclui controle de inventário, ponto de venda (PDV), gerenciamento de clientes, usuários, permissões granulares e relatórios de lucratividade.",
-        "image_url": "../../../assets/img/projects/museu-magma-dashboard.png",
+        "image_url": "/assets/img/projects/museu-magma-dashboard.png",
         "technologies": [
             "React",
             "Django REST Framework",
@@ -27,7 +27,7 @@
     {
         "title": "Bar Optimization System",
         "description": "Aplicação desktop com interface gráfica simples, mas moderna, para otimização industrial de corte de vergalhões, minimizando desperdício e gerando relatórios em PDF/Excel.",
-        "image_url": "../../../assets/img/projects/bar-optimization-system.png",
+        "image_url": "/assets/img/projects/bar-optimization-system.png",
         "technologies": [
             "Java",
             "JavaFX",
@@ -48,7 +48,7 @@
     {
         "title": "Landing Page para Nutricionista",
         "description": "Landing page moderna e responsiva com foco em geração de leads e otimização para SEO, projetada para fortalecer a presença digital de um profissional de nutrição.",
-        "image_url": "../../../assets/img/projects/lp-nutricionista.png", 
+        "image_url": "/assets/img/projects/lp-nutricionista.png", 
         "technologies": [
             "React",
             "TailwindCSS",
@@ -67,7 +67,7 @@
     {
         "title": "Automação de Processos (RPA) com Python",
         "description": "Suite de automação (RPA) que elimina tarefas manuais repetitivas em um sistema ERP legado, como impressão em lote de ordens de produção e extração de dados de planilhas.",
-        "image_url": "../../../assets/img/projects/python-automation.png", 
+        "image_url": "/assets/img/projects/python-automation.png", 
         "technologies": [
             "Python",
             "CustomTkinter",
@@ -87,7 +87,7 @@
     {
         "title": "E-commerce - API REST com Spring Boot",
         "description": "API RESTful de E-commerce desenvolvida com Spring Boot, oferecendo funcionalidades de autenticação, gestão de produtos, pedidos e integração com métodos de pagamento, e pretendo criar chat em tempo real entre lojista e clientes.",
-        "image_url": "../../../assets/img/projects/api.png",
+        "image_url": "/assets/img/projects/api.png",
         "technologies": [
             "Java",
             "Spring Boot",
@@ -106,7 +106,7 @@
     {
         "title": "Steel Sales Calculator",
         "description": "O projeto é uma calculado para Vendedores e pessoas interessadas nos calculos de construção civil, onde as pessoas tendem a ter maior dificuldade de entendimento. O projeto também é para eu conhecer e aprender o básico bootstrap, além disso, praticar meus conhecimentos.",
-        "image_url": "../../../assets/img/projects/steel-sales-calculator.png",
+        "image_url": "/assets/img/projects/steel-sales-calculator.png",
         "technologies": [
             "React",
             "Typescript",
@@ -125,7 +125,7 @@
     {
         "title": "FórumHub - API REST com Spring",
         "description": "Este é o FórumHub, um projeto de API REST desenvolvido com Spring para gerenciar tópicos de discussão em um fórum. A API permite a criação, listagem, atualização e exclusão de tópicos, usuários, cursos e respostas, seguindo as melhores práticas do modelo REST.",
-        "image_url": "../../../assets/img/projects/api.png",
+        "image_url": "/assets/img/projects/api.png",
         "technologies": [
             "Java",
             "MySQL",
@@ -144,7 +144,7 @@
     {
         "title": "Best Browser Games",
         "description": " É uma aplicação web desenvolvida em React, criada como uma comunidade online para avaliação e compartilhamento de experiências relacionadas a jogos de navegador (browser games).",
-        "image_url": "../../../assets/img/projects/best-browser-games.png",
+        "image_url": "/assets/img/projects/best-browser-games.png",
         "technologies": [
             "React",
             "JavaScript",
@@ -163,7 +163,7 @@
     {
         "title": "To-Do List",
         "description": "O projeto To-Do List é uma aplicação web interativa que permite aos usuários fazer a gestão de suas tarefas. Desenvolvido como projeto final do curso de Front-End Dinâmico, esta aplicação oferece funcionalidades para cadastro de usuários, login, criação, edição e exclusão de tarefas, futuramente estarei implementando a visualização organizada das tarefas por prazos e prioridades.",
-        "image_url": "../../../assets/img/projects/todo-list.png",
+        "image_url": "/assets/img/projects/todo-list.png",
         "technologies": [
             "HTML5",
             "CSS3",
@@ -182,7 +182,7 @@
     {
         "title": "Orbit Trips",
         "description": "Este é um projeto de criação de um site HTML estático com a temática de venda de viagens intergaláticas. O objetivo deste projeto é oferecer uma plataforma simples onde os visitantes possam explorar e adquirir viagens fictícias para destinos além do nosso planeta.",
-        "image_url": "../../../assets/img/projects/orbit-trips.png",
+        "image_url": "/assets/img/projects/orbit-trips.png",
         "technologies": [
             "HTML5",
             "CSS3",
@@ -201,7 +201,7 @@
     {
         "title": "Landing page - página de contratações",
         "description": "Projeto de uma Landing page destinada a novas contratações da empresa OptimusTech(fictícia).",
-        "image_url": "../../../assets/img/projects/pagina-contratacoes.png",
+        "image_url": "/assets/img/projects/pagina-contratacoes.png",
         "technologies": [
             "HTML5",
             "CSS3"
@@ -219,7 +219,7 @@
     {
         "title": "Projetos #boraCodar da Rocketseat",
         "description": "Projetos pequenos de front-end do #boraCodar da Rocketseat, como: pricing table, um kanban, tela de login, landing page, dashboard e muitos outros projetos.",
-        "image_url": "../../../assets/img/projects/boracodar.png",
+        "image_url": "/assets/img/projects/boracodar.png",
         "technologies": [
             "HTML5",
             "CSS3",
