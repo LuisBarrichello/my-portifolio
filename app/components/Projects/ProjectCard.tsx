@@ -2,6 +2,7 @@ import IconGithub from '@/app/assets/icons/github.svg';
 import IconLink from '@/app/assets/icons/link.svg';
 import IconDocument from '@/app/assets/icons/document.svg';
 import Button from '../common/Buttons/Button';
+import Image from 'next/image';
 
 interface ProjectCardProps {
     project: {
@@ -31,11 +32,12 @@ function ProjectCard({ project, onOpenModal }: ProjectCardProps) {
         <div className="bg-white dark:bg-dark-20 rounded-lg overflow-hidden shadow-md hover:shadow-xl dark:shadow-black/30 transition-all duration-300 group flex flex-col animate-fade-in">
             <figure className="relative aspect-video overflow-hidden">
                 {image_url && (
-                    <img
+                    <Image
                         src={image_url}
                         alt={`Imagem ilustrativa do projeto "${title}"`}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                        loading="lazy"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                        fill
                     />
                 )}
 
