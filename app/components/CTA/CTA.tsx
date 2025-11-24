@@ -1,6 +1,5 @@
 'use client';
 import Button from '../common/Buttons/Button';
-import { Link as ScrollLink } from 'react-scroll';
 import IconChat from '@/app/assets/icons/icon-chat.svg';
 
 function CTA() {
@@ -25,7 +24,8 @@ function CTA() {
                 </div>
             </div>
 
-            <div className="relative z-10 w-full max-w-4xl mx-auto bg-white/80 dark:bg-dark-10/80 backdrop-blur-sm text-center 
+            <div
+                className="relative z-10 w-full max-w-4xl mx-auto bg-white/80 dark:bg-dark-10/80 backdrop-blur-sm text-center 
                     px-6 py-12 
                     sm:px-8 sm:py-16 
                     md:px-12 md:py-20">
@@ -43,16 +43,11 @@ function CTA() {
                         content="Entre em Contato"
                         pathLink="mailto:luisgabrielbarrichello@gmail.com"
                     />
-                    <ScrollLink
-                        to="projects"
-                        smooth={true}
-                        duration={500}
-                        offset={-70}>
-                        <Button
-                            variant="red-purple"
-                            content="Veja meus Projetos"
-                        />
-                    </ScrollLink>
+                    <Button
+                        variant="red-purple"
+                        content="Veja meus Projetos"
+                        pathLink="#projects" // Link nativo
+                    />
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center mt-4">
                     <Button

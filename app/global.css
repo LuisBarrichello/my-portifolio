@@ -7,6 +7,10 @@
         scroll-behavior: smooth;
     }
 
+    section[id] {
+        @apply scroll-mt-14 md:scroll-mt-16;
+    }
+
     body {
         @apply bg-white text-gray-800 dark:bg-dark-10 dark:text-white font-sans text-base;
     }

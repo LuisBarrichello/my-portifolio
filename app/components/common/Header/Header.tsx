@@ -1,5 +1,4 @@
 'use client';
-import { Link } from 'react-scroll';
 import { useState } from 'react';
 import clsx from 'clsx';
 
@@ -11,12 +10,12 @@ function Header() {
     };
 
     const navLinks = [
-        { to: 'home', label: 'Home' },
-        { to: 'about-me', label: 'Sobre mim' },
-        { to: 'projects', label: 'Projetos' },
-        { to: 'skills', label: 'Conhecimentos' },
-        { to: 'my-services', label: 'Serviços' },
-        { to: 'experience', label: 'Experiência' },
+        { to: '#home', label: 'Home' },
+        { to: '#about-me', label: 'Sobre mim' },
+        { to: '#projects', label: 'Projetos' },
+        { to: '#skills', label: 'Conhecimentos' },
+        { to: '#my-services', label: 'Serviços' },
+        { to: '#experience', label: 'Experiência' },
     ];
 
     const navLinkClasses =
@@ -52,18 +51,15 @@ function Header() {
                     )}>
                     <ul className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 lg:gap-10 w-full h-screen md:h-auto">
                         {navLinks.map((link) => (
-                            <Link
-                                key={link.to}
-                                to={link.to}
-                                smooth={true}
-                                offset={-64}
-                                duration={500}
-                                onClick={() => setIsMenuOpen(false)}
-                                className={`${navLinkClasses} group text-lg`}>
-                                <span>{link.label}</span>
-
-                                <span className="absolute bottom-0 left-0 w-full h-0.5 bg-brand-blue-800 dark:bg-brand transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-center"></span>
-                            </Link>
+                            <li key={link.to}>
+                                <a
+                                    href={link.to}
+                                    onClick={() => setIsMenuOpen(false)}
+                                    className={`${navLinkClasses} group text-lg block py-2 md:py-0`}>
+                                    <span>{link.label}</span>
+                                    <span className="absolute bottom-0 left-0 w-full h-0.5 bg-brand-blue-800 dark:bg-brand transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-center"></span>
+                                </a>
+                            </li>
                         ))}
                     </ul>
                 </div>

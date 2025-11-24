@@ -15,6 +15,8 @@ export default {
             colors: {
                 brand: '#00d2df',
                 'gray-custom': '#222',
+                'dark-brand': '#020809',
+                'dark-05': '#09090b',
                 'dark-10': '#121212',
                 'dark-20': '#151515',
                 'dark-30': '#c4c4c4',

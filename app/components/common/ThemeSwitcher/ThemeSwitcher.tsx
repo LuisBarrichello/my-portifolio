@@ -1,26 +1,18 @@
 'use client'
-import { useTheme } from '../../../hooks/useTheme';
-import { useEffect, useState } from 'react';
+
+import { useTheme } from 'next-themes';
 
 function ThemeSwitcher() {
-    const [theme, toggleTheme] = useTheme();
-    const [mounted, setMounted] = useState(false);
+    const { theme, setTheme } = useTheme();
 
-    useEffect(() => {
-        // eslint-disable-next-line react-hooks/set-state-in-effect
-        setMounted(true);
-    }, []);
-
-    if (!mounted) {
-        return (
-            <button className="p-2 rounded-full w-10 h-10 bg-dark-20 opacity-0" />
-        );
-    }
+    const toggleTheme = () => {
+        setTheme(theme === 'light' ? 'dark' : 'light');
+    };
 
     return (
         <button
             onClick={toggleTheme}
-            className="p-2 rounded-full text-white bg-dark-20 hover:bg-dark-30 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-dark-10 focus:ring-brand-color">
+            className="w-11 h-11 flex items-center justify-center transition-all duration-300 p-2 rounded-full text-white dark:bg-gray-800 dark:hover:bg-gray-700 bg-gray-500 hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-dark-10 focus:ring-brand-color">
             {theme === 'light' ? (
                 <svg
                     xmlns="http://www.w3.org/2000/svg"

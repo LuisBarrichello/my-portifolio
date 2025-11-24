@@ -1,9 +1,7 @@
-'use client';
 import Button from '../common/Buttons/Button';
 import IconLinkedin from '@/app/assets/icons/linkedin.svg';
 import IconGithub from '@/app/assets/icons/github.svg';
 import ArrowDownIcon from '../common/ArrowDownIcon/ArrowDownIcon';
-import { Link as ScrollLink } from 'react-scroll';
 
 interface SocialLink {
     href: string;
@@ -78,17 +76,14 @@ function Hero() {
                     ))}
                 </nav>
             </div>
-            <ScrollLink
-                to="about-me"
-                smooth={true}
-                duration={500}
-                offset={-50}
+            <a
+                href="#about-me"
                 className="absolute bottom-20 left-1/2 -translate-x-1/2 cursor-pointer"
                 aria-label="Rolar para a próxima seção">
                 <div className="w-10 h-10 rounded-full border-2 border-gray-800 dark:border-gray-400 flex items-center justify-center animate-bounce opacity-80 hover:opacity-100 transition-opacity duration-300">
                     <ArrowDownIcon></ArrowDownIcon>
                 </div>
-            </ScrollLink>
+            </a>
         </section>
     );
 }
