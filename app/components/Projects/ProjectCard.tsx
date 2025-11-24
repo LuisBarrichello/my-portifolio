@@ -1,10 +1,22 @@
-import PropTypes from 'prop-types';
-import IconGithub from '../../assets/img/github.svg?react';
-import IconLink from '../../assets/img/link.svg?react';
-import IconDocument from '../../assets/img/document.svg?react';
+import IconGithub from '@/app/assets/icons/github.svg';
+import IconLink from '@/app/assets/icons/link.svg';
+import IconDocument from '@/app/assets/icons/document.svg';
 import Button from '../common/Buttons/Button';
 
-function ProjectCard({ project, onOpenModal }) {
+interface ProjectCardProps {
+    project: {
+        image_url: string;
+        title: string;
+        description: string;
+        technologies: string[];
+        url_github: string;
+        homepage?: string;
+        featured?: boolean;
+    };
+    onOpenModal: () => void;
+}
+
+function ProjectCard({ project, onOpenModal }: ProjectCardProps) {
     const {
         image_url,
         title,
@@ -95,18 +107,5 @@ function ProjectCard({ project, onOpenModal }) {
         </div>
     );
 }
-
-ProjectCard.propTypes = {
-    project: PropTypes.shape({
-        image_url: PropTypes.string.isRequired,
-        title: PropTypes.string.isRequired,
-        description: PropTypes.string.isRequired,
-        technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
-        url_github: PropTypes.string.isRequired,
-        homepage: PropTypes.string,
-        featured: PropTypes.bool,
-    }).isRequired,
-    onOpenModal: PropTypes.func.isRequired,
-};
 
 export default ProjectCard;

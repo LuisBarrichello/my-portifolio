@@ -1,6 +1,8 @@
-import PropTypes from 'prop-types';
+interface ArrowDownIconProps {
+    className?: string;
+}
 
-function ArrowDownIcon({ className = 'w-6 h-6' }) {
+function ArrowDownIcon({ className = 'w-6 h-6' }: ArrowDownIconProps) {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +23,3 @@ function ArrowDownIcon({ className = 'w-6 h-6' }) {
 }
 
 export default ArrowDownIcon;
-
-ArrowDownIcon.propTypes = {
-    className: PropTypes.string,
-};

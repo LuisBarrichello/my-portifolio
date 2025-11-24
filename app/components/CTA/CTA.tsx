@@ -1,6 +1,7 @@
+'use client';
 import Button from '../common/Buttons/Button';
 import { Link as ScrollLink } from 'react-scroll';
-import IconChat from '../../assets/img/icon-chat.svg?react';
+import IconChat from '@/app/assets/icons/icon-chat.svg';
 
 function CTA() {
     return (

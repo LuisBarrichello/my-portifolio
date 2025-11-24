@@ -1,3 +1,4 @@
+'use client';
 import { useState } from 'react';
 import { clsx } from 'clsx';
 import experiencesData from '../../data/experiences.json';

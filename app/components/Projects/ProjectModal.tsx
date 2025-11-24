@@ -1,9 +1,22 @@
-import PropTypes from 'prop-types';
+'use client';
 import { useEffect } from 'react';
 
-function ProjectModal({ project, onClose }) {
+interface ProjectModalProps {
+    project: {
+        title: string;
+        case_study: {
+            problem: string;
+            solution: string;
+            learnings: string;
+        };
+    };
+    onClose: () => void;
+}
+
+
+function ProjectModal({ project, onClose }: ProjectModalProps) {
     useEffect(() => {
-        const handleEsc = (event) => {
+        const handleEsc = (event: KeyboardEvent) => {
             if (event.key === 'Escape') {
                 onClose();
             }
@@ -76,17 +89,5 @@ function ProjectModal({ project, onClose }) {
         </>
     );
 }
-
-ProjectModal.propTypes = {
-    project: PropTypes.shape({
-        title: PropTypes.string.isRequired,
-        case_study: PropTypes.shape({
-            problem: PropTypes.string.isRequired,
-            solution: PropTypes.string.isRequired,
-            learnings: PropTypes.string.isRequired,
-        }).isRequired,
-    }).isRequired,
-    onClose: PropTypes.func.isRequired,
-};
 
 export default ProjectModal;

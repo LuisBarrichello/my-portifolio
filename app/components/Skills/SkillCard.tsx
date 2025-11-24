@@ -1,6 +1,9 @@
-import { PropTypes } from 'prop-types';
+interface SkillCardProps {
+    name: string;
+    icon: string;
+}
 
-const SkillCard = ({ name, icon }) => (
+const SkillCard = ({ name, icon }: SkillCardProps) => (
     <div className="flex flex-col items-center justify-center gap-2 p-4 bg-gray-100 dark:bg-dark-20 rounded-lg shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300">
         <img
             src={`https://skillicons.dev/icons?i=${icon}`}
@@ -14,8 +17,3 @@ const SkillCard = ({ name, icon }) => (
 );
 
 export default SkillCard;
-
-SkillCard.propTypes = {
-    name: PropTypes.string.isRequired,
-    icon: PropTypes.string.isRequired,
-};

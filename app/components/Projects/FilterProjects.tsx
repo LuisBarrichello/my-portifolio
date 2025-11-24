@@ -1,8 +1,13 @@
-import PropTypes from 'prop-types';
 import Button from '../common/Buttons/Button';
 import { clsx } from "clsx";
 
-function FilterProjects({ categories, selected, onSelect }) {
+interface FilterProjectsProps {
+    categories: string[];
+    selected: string;
+    onSelect: (category: string) => void;
+}
+
+function FilterProjects({ categories, selected, onSelect }: FilterProjectsProps) {
     return (
         <nav
             className="flex flex-wrap items-center justify-center gap-4 mb-12"
@@ -27,11 +32,5 @@ function FilterProjects({ categories, selected, onSelect }) {
         </nav>
     );
 }
-
-FilterProjects.propTypes = {
-    categories: PropTypes.arrayOf(PropTypes.string).isRequired,
-    selected: PropTypes.string.isRequired,
-    onSelect: PropTypes.func.isRequired,
-};
 
 export default FilterProjects;

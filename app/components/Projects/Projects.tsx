@@ -1,18 +1,31 @@
+'use client';
 import { useState, useMemo, useRef } from 'react';
 import projectsData from '../../data/projects.json';
 import Button from '../common/Buttons/Button';
 import ProjectCard from './ProjectCard';
 import ProjectModal from './ProjectModal';
 import FilterProjects from './FilterProjects';
-import IconArrowDown from '../../assets/img/arrow-down.svg?react';
-import IconArrowUp from '../../assets/img/arrow-up.svg?react';
-import IconChat from '../../assets/img/icon-chat.svg?react';
+import IconArrowDown from '@/app/assets/icons/arrow-down.svg';
+import IconArrowUp from '@/app/assets/icons/arrow-up.svg';
+import IconChat from '@/app/assets/icons/icon-chat.svg';
+
+interface ProjectModalProps {
+    project: {
+        title: string;
+        case_study: {
+            problem: string;
+            solution: string;
+            learnings: string;
+        };
+    };
+    onClose: () => void;
+}
 
 function Projects() {
     const [visibleProjects, setVisibleProjects] = useState(6);
-    const [selectedProject, setSelectedProject] = useState(null);
+    const [selectedProject, setSelectedProject] = useState<ProjectModalProps['project'] | null>(null);
     const [selectedCategory, setSelectedCategory] = useState('Todos');
-    const projectsSectionRef = useRef(null);
+    const projectsSectionRef = useRef<HTMLElement>(null);
 
     const categories = useMemo(
         () => ['Todos', ...new Set(projectsData.map((p) => p.category))],
@@ -33,10 +46,11 @@ function Projects() {
 
     const unloadPreviousProjects = () => {
         setVisibleProjects(6);
-        projectsSectionRef.current?.scrollIntoView({ behaivor: 'smooth' });
+        projectsSectionRef.current?.scrollIntoView({ behavior: 'smooth' });
     };
 
-    const openModal = (project) => setSelectedProject(project);
+    const openModal = (project: ProjectModalProps['project']) =>
+        setSelectedProject(project);
     const closeModal = () => setSelectedProject(null);
 
     return (

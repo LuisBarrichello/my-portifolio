@@ -1,10 +1,18 @@
+'use client';
 import Button from '../common/Buttons/Button';
-import IconLinkedin from '../../assets/img/linkedin.svg?react';
-import IconGithub from '../../assets/img/github.svg?react';
+import IconLinkedin from '@/app/assets/icons/linkedin.svg';
+import IconGithub from '@/app/assets/icons/github.svg';
 import ArrowDownIcon from '../common/ArrowDownIcon/ArrowDownIcon';
 import { Link as ScrollLink } from 'react-scroll';
 
-const SOCIAL_LINKS = [
+interface SocialLink {
+    href: string;
+    label: string;
+    variant: 'purple-blue' | 'red-purple';
+    IconComponent: React.ElementType;
+}
+
+const SOCIAL_LINKS: SocialLink[] = [
     {
         href: 'https://www.linkedin.com/in/luisgabrielbarrichello',
         label: 'Linkedin',

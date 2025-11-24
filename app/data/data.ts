@@ -1,6 +1,6 @@
-import IconGithub from '../assets/img/github.svg?react';
-import IconInstagram from '../assets/img/instagram.svg?react';
-import IconLinkedIn from '../assets/img/linkedin.svg?react';
+import IconGithub from '@/app/assets/icons/github.svg';
+import IconInstagram from '@/app/assets/icons/instagram.svg';
+import IconLinkedIn from '@/app/assets/icons/linkedin.svg';
 
 export const aboutMeText = [
     {

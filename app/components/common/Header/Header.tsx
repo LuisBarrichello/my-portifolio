@@ -1,5 +1,5 @@
+'use client';
 import { Link } from 'react-scroll';
-// import './Header.css';
 import { useState } from 'react';
 import clsx from 'clsx';
 
