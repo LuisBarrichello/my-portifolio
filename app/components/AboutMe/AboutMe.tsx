@@ -1,31 +1,12 @@
-'use client';
-import { useState } from 'react';
 import IconDownload from '@/app/assets/icons/download-cloud.svg';
-import IconEmail from '@/app/assets/icons/mail.svg';
-import PhotoMe from '../../../public/assets/img/me.png';
+import PhotoMe from '@/app/assets/img/me.png';
 import Button from '../common/Buttons/Button';
 import { aboutMeText } from '../../data/data';
 import SocialLinks from '../common/SocialLinks/SocialLinks';
 import Image from 'next/image';
+import CopyEmailButton from '../common/Buttons/CopyEmailButton';
 
 function AboutMe() {
-    const [copied, setCopied] = useState(false);
-    const emailAddress = 'luisgabrielbarrichello@gmail.com';
-
-    const copyEmail = () => {
-        navigator.clipboard
-            .writeText(emailAddress)
-            .then(() => {
-                setCopied(true);
-                setTimeout(() => {
-                    setCopied(false);
-                }, 2000);
-            })
-            .catch((error) => {
-                console.error('Erro ao copiar o e-mail: ', error);
-            });
-    };
-
     return (
         <>
             <section
@@ -88,19 +69,8 @@ function AboutMe() {
                                 target={'target'}
                                 download={true}
                             />
-                            <Button
-                                aria-pressed={copied}
-                                variant={'purple-blue'}
-                                content={copied ? 'Copiado!' : 'Copiar E-mail'}
-                                IconComponent={IconEmail}
-                                altImage={
-                                    'Icone indicando meu email para contato'
-                                }
-                                onClick={copyEmail}
-                            />
-                            <span aria-live="polite" className="sr-only">
-                                {copied && 'E-mail copiado!'}
-                            </span>
+
+                            <CopyEmailButton />
                         </div>
                     </div>
                 </div>

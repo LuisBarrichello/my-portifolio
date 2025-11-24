@@ -1,17 +1,7 @@
-import Link from 'next/link';
-import { cva } from 'class-variance-authority';
+import Link, { LinkProps } from 'next/link';
+import { cva, VariantProps } from 'class-variance-authority';
 import { clsx } from 'clsx';
-
-interface ButtonProps {
-    className?: string;
-    variant?: 'purple-blue' | 'red-purple' | 'ghost' | 'outline';
-    content: string;
-    altImage?: string;
-    IconComponent?: React.ElementType;
-    pathLink?: string;
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    [key: string]: any;
-}
+import { ButtonHTMLAttributes, ElementType, AnchorHTMLAttributes } from 'react';
 
 const buttonShellVariants = cva(
     'p-[2px] rounded-lg relative inline-flex items-center justify-center overflow-hidden transition-transform duration-300 ease-in-out hover:scale-105 group',
@@ -46,6 +36,26 @@ const buttonCoreVariants = cva(
     },
 );
 
+interface BaseProps extends VariantProps<typeof buttonShellVariants> {
+    content: string;
+    altImage?: string;
+    IconComponent?: ElementType;
+    className?: string;
+}
+
+type LinkButtonProps = BaseProps &
+    Omit<LinkProps, 'href'> &
+    AnchorHTMLAttributes<HTMLAnchorElement> & {
+        pathLink: string;
+    };
+
+type RegularButtonProps = BaseProps &
+    ButtonHTMLAttributes<HTMLButtonElement> & {
+        pathLink?: never;
+    };
+
+type ButtonProps = LinkButtonProps | RegularButtonProps;
+
 function Button({
     className,
     variant,
@@ -73,8 +83,7 @@ function Button({
             <Link
                 href={pathLink}
                 className={clsx(buttonShellVariants({ variant }), className)}
-                {...props}
-            >
+                {...(props as Omit<LinkProps, 'href'>)}>
                 {buttonContent}
             </Link>
         );
@@ -83,8 +92,7 @@ function Button({
     return (
         <button
             className={clsx(buttonShellVariants({ variant }), className)}
-            {...props}
-        >
+            {...(props as ButtonHTMLAttributes<HTMLButtonElement>)}>
             {buttonContent}
         </button>
     );

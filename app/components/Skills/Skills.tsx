@@ -49,10 +49,10 @@ function Skills() {
             <div className="w-full max-w-7xl mx-auto flex flex-col items-center">
                 <h2 className="title-section mb-10">Conhecimentos</h2>
 
-                <div className="w-full space-y-12 mb-4">
+                <div className="w-full">
                     {Object.entries(techSkills).map(([category, skills]) => (
-                        <div key={category} className="animate-fade-in mt-2">
-                            <h3 className="font-poppins font-semibold text-xl text-center md:text-left text-brand-blue-800 dark:text-brand mb-5 flex items-center justify-center md:justify-start gap-2">
+                        <div key={category} className="animate-fade-in mt-1">
+                            <h3 className="font-poppins font-semibold text-xl text-center md:text-left text-brand-blue-800 dark:text-brand mb- flex items-center justify-center md:justify-start gap-2">
                                 <span className="h-1 w-8 bg-brand rounded-full inline-block md:hidden"></span>
                                 {category}
                                 <span className="h-1 w-8 bg-brand rounded-full inline-block md:hidden"></span>
@@ -70,7 +70,7 @@ function Skills() {
                     ))}
                 </div>
 
-                <div className="w-full bg-gray-50 dark:bg-dark-20 rounded-2xl p-8 md:p-12 text-center">
+                <div className="w-full bg-gray-100 dark:bg-dark-20 rounded-2xl p-8 md:p-12 text-center mt-6">
                     <h3 className="font-poppins font-semibold text-xl text-gray-900 dark:text-white mb-6">
                         Metodologias e Competências
                     </h3>
@@ -79,7 +79,7 @@ function Skills() {
                             <span
                                 key={skill}
                                 className="px-4 py-2 rounded-full text-sm font-medium 
-                                         bg-white dark:bg-dark-10 text-gray-700 dark:text-gray-300 
+                                         bg-white dark:bg-dark-05 text-gray-700 dark:text-gray-300 
                                          border border-gray-200 dark:border-gray-700 shadow-sm
                                          hover:border-brand hover:text-brand dark:hover:border-brand dark:hover:text-brand 
                                          transition-all duration-300 cursor-default">

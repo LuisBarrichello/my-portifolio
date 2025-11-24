@@ -32,8 +32,8 @@ const BackToTopButton = () => {
             onClick={scrollToTop}
             className={clsx(
                 'w-11 h-11 rounded-full flex items-center justify-center transition-all duration-300',
-                'bg-brand hover:bg-brand-dark text-white',
-                'dark:bg-dark-20 dark:hover:bg-gray-700 dark:text-gray-300 dark:hover:text-white',
+                'bg-brand hover:bg-brand-blue-400 text-white',
+                'dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-gray-300 dark:hover:text-white',
                 {
                     'opacity-100 translate-y-0': isVisible,
                     'opacity-0 translate-y-4 pointer-events-none': !isVisible,

@@ -5,6 +5,7 @@ import Header from './components/common/Header/Header';
 import Footer from './components/common/Footer/Footer';
 import ThemeSwitcher from './components/common/ThemeSwitcher/ThemeSwitcher';
 import BackToTopButton from './components/common/Buttons/BackToTopButton';
+import { Providers } from './Providers';
 
 const inter = Inter({
     subsets: ['latin'],
@@ -53,7 +54,7 @@ export const metadata: Metadata = {
         siteName: 'Luís Gabriel Barrichello Portfolio',
         images: [
             {
-                url: '/assets/img/me.png', 
+                url: '/assets/img/me.png',
                 width: 1200,
                 height: 630,
                 alt: 'Luís Gabriel Barrichello',
@@ -63,7 +64,7 @@ export const metadata: Metadata = {
     robots: {
         index: true,
         follow: true,
-    }
+    },
 };
 
 export default function RootLayout({
@@ -96,19 +97,22 @@ export default function RootLayout({
             <body className="bg-white dark:bg-dark-10 text-gray-800 dark:text-white antialiased selection:bg-brand selection:text-white">
                 <script
                     type="application/ld+json"
-                    dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-                ></script>
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify(jsonLd),
+                    }}></script>
 
-                <Header />
+                <Providers>
+                    <Header />
 
-                <main className="relative">{children}</main>
+                    <main className="relative">{children}</main>
 
-                <Footer />
-
-                <div className="fixed bottom-5 right-5 flex flex-col items-center gap-y-4 z-50">
-                    <ThemeSwitcher />
-                    <BackToTopButton />
-                </div>
+                    <Footer />
+                    
+                    <div className="fixed bottom-5 right-5 flex flex-col items-center gap-y-4 z-50">
+                        <ThemeSwitcher />
+                        <BackToTopButton />
+                    </div>
+                </Providers>
             </body>
         </html>
     );
