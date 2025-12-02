@@ -23,8 +23,8 @@ function Header() {
 
     return (
         <header className="bg-white/80 dark:bg-dark-10/80 backdrop-blur-sm sticky top-0 z-50 px-6 md:px-10 lg:px-20">
-            <nav className="w-full h-16 flex items-center justify-between">
-                <div>
+            <nav className="w-full h-16 flex items-center justify-between gap-x-4">
+                <div className="shrink-0">
                     <a
                         href="https://www.linkedin.com/in/luisgabrielbarrichello/"
                         target="_blank"
@@ -49,7 +49,7 @@ function Header() {
                             '-translate-y-[150%] md:translate-y-0': !isMenuOpen,
                         },
                     )}>
-                    <ul className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 lg:gap-10 w-full h-screen md:h-auto">
+                    <ul className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-4 lg:gap-10 w-full h-screen md:h-auto">
                         {navLinks.map((link) => (
                             <li key={link.to}>
                                 <a
