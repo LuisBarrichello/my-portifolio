@@ -44,7 +44,7 @@ function MyServices() {
                                     ? 'from-brand-purple to-brand-blue'
                                     : 'from-brand-red to-brand-purple-dark'
                             }`}>
-                            <div className="bg-white dark:bg-dark-10 rounded-md p-8 h-full flex flex-col items-center md:items-start text-center md:text-left">
+                            <div className="bg-white dark:bg-dark-10 rounded-md p-4 md:p-8 h-full flex flex-col items-center md:items-start text-center md:text-left">
                                 <div className="bg-brand/10 p-3 rounded-full mb-6">
                                     <service.Icon
                                         className="w-8 h-8 text-brand"
@@ -54,7 +54,7 @@ function MyServices() {
                                 <h3 className="font-poppins font-bold text-xl text-gray-900 dark:text-white mb-3">
                                     {service.title}
                                 </h3>
-                                <p className="text-gray-600 dark:text-gray-400 text-sm">
+                                <p className="text-gray-600 dark:text-gray-400">
                                     {service.description}
                                 </p>
                             </div>
