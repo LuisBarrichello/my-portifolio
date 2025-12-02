@@ -1,0 +1,238 @@
+[
+    {
+        "title": "Sistema de Gestão do Museu Magma",
+        "description": "Sistema de gestão completo (ERP/PDV) construído para o Museu Magma. Inclui controle de inventário, ponto de venda (PDV), gerenciamento de clientes, usuários, permissões granulares e relatórios de lucratividade.",
+        "image_url": "/assets/img/projects/museu-magma-dashboard.png",
+        "technologies": [
+            "React",
+            "Django REST Framework",
+            "PostgreSQL",
+            "JavaScript (ES6+)",
+            "CSS (Responsive)",
+            "Python",
+            "Axios",
+            "Chart.js",
+            "JWT"
+        ],
+        "homepage": "https://sistemamuseumagma.vercel.app/",
+        "url_github": "https://github.com/LuisBarrichello/museu-magma-frontend",
+        "featured": true,
+        "case_study": {
+            "problem": "O museu utilizava um sistema monolítico antigo, lento e não responsivo, que dificultava o gerenciamento diário do inventário e das vendas, sem controle de permissões de acesso.",
+            "solution": "Refatoração completa da arquitetura. O backend foi recriado como uma API RESTful (Django/Python) e o frontend foi construído do zero como uma Single-Page Application (React), resultando em um sistema rápido, seguro e totalmente responsivo.",
+            "learnings": "Domínio em arquitetura de microsserviços, implementação de autenticação JWT com token refresh, criação de permissões granulares no backend (DRF), gerenciamento de estado global no frontend (React Context) e deploy completo de uma aplicação Full Stack em nuvem (Vercel, Render, Neon)."
+        },
+        "category": "Full Stack"
+    },
+    {
+        "title": "Bar Optimization System",
+        "description": "Aplicação desktop com interface gráfica simples, mas moderna, para otimização industrial de corte de vergalhões, minimizando desperdício e gerando relatórios em PDF/Excel.",
+        "image_url": "/assets/img/projects/bar-optimization-system.png",
+        "technologies": [
+            "Java",
+            "JavaFX",
+            "Apache PDFBox",
+            "Apache POI",
+            "JUnit"
+        ],
+        "homepage": "",
+        "url_github": "https://github.com/LuisBarrichello/bar-optimization-system",
+        "featured": true,
+        "case_study": {
+            "problem": "O desafio era reduzir o desperdício de matéria-prima em uma empresa de aço, otimizando o processo de corte de vergalhões de 12 metros para minimizar perdas financeiras.",
+            "solution": "Desenvolvi uma aplicação desktop em JavaFX que automatiza todo o fluxo: o sistema importa as listas de corte de um PDF, aplica o algoritmo 'Best Fit Decreasing' para calcular o plano de corte mais eficiente e, por fim, gera relatórios detalhados em PDF e Excel para a equipe de produção.",
+            "learnings": "Neste projeto, aprofundei meus conhecimentos em algoritmos de otimização e no desenvolvimento de interfaces gráficas com JavaFX. Ganhei experiência prática com bibliotecas robustas como Apache PDFBox e POI para manipulação de arquivos, além de consolidar minhas habilidades em testes unitários com JUnit para garantir a confiabilidade do algoritmo."
+        },
+        "category": "Back End"
+    },
+    {
+        "title": "Landing Page para Nutricionista",
+        "description": "Landing page moderna e responsiva com foco em geração de leads e otimização para SEO, projetada para fortalecer a presença digital de um profissional de nutrição.",
+        "image_url": "/assets/img/projects/lp-nutricionista.png", 
+        "technologies": [
+            "React",
+            "TailwindCSS",
+            "JavaScript"
+        ],
+        "homepage": "https://landing-page-nutricionista-guilherme-moras.vercel.app/",
+        "url_github": "https://github.com/LuisBarrichello/Landing-Page---Nutricionista-Guilherme-Moras",
+        "featured": true, 
+        "case_study": {
+            "problem": "O cliente, um nutricionista, possuía um site desatualizado, com baixa performance e que não refletia sua nova identidade visual focada em nutrição esportiva.",
+            "solution": "Desenvolvi uma landing page totalmente nova a partir do zero, utilizando React e Tailwind CSS para criar um design moderno, rápido e totalmente responsivo. A estrutura foi pensada para guiar o usuário e facilitar a conversão, alinhada às novas inspirações e ao público-alvo do cliente.",
+            "learnings": "Este foi meu primeiro projeto aplicando Tailwind CSS em um contexto profissional, o que solidificou minhas habilidades no framework. Aprimorei também minhas práticas em componentização com React e na criação de layouts 'mobile-first'."
+        },
+        "category": "Front End"
+    },
+    {
+        "title": "Automação de Processos (RPA) com Python",
+        "description": "Suite de automação (RPA) que elimina tarefas manuais repetitivas em um sistema ERP legado, como impressão em lote de ordens de produção e extração de dados de planilhas.",
+        "image_url": "/assets/img/projects/python-automation.png", 
+        "technologies": [
+            "Python",
+            "CustomTkinter",
+            "PyAutoGUI",
+            "Pandas"
+        ],
+        "homepage": "",
+        "url_github": "https://github.com/LuisBarrichello/python-erp-automation-suite",
+        "featured": true,
+        "case_study": {
+            "problem": "Um processo administrativo manual e demorado de impressão de documentos de produção estava consumindo horas de trabalho da equipe, sendo um gargalo que aumentava conforme a demanda.",
+            "solution": "Criei uma suíte de automação com uma interface central construída em CustomTkinter. O robô realiza o login no sistema, navega pelas janelas e pop-ups com PyAutoGUI, lê os dados necessários de planilhas Excel com Pandas e gerencia todo o processo de impressão de forma autônoma, liberando a equipe para tarefas de maior valor.",
+            "learnings": "Este projeto foi uma imersão em Robotic Process Automation (RPA). Desenvolvi habilidades em bibliotecas de automação de GUI, manipulação de dados com Pandas e na criação de interfaces de usuário simples com CustomTkinter para gerenciar os scripts."
+        },
+        "category": "Automação"
+    },
+    {
+        "title": "E-commerce - API REST com Spring Boot",
+        "description": "API RESTful de E-commerce desenvolvida com Spring Boot, oferecendo funcionalidades de autenticação, gestão de produtos, pedidos e integração com métodos de pagamento, e pretendo criar chat em tempo real entre lojista e clientes.",
+        "image_url": "/assets/img/projects/api.png",
+        "technologies": [
+            "Java",
+            "Spring Boot",
+            "MySQL"
+        ],
+        "homepage": "",
+        "url_github": "https://github.com/LuisBarrichello/ecommerce-api-springboot",
+        "featured": false,
+        "case_study": {
+            "problem": "",
+            "solution": "",
+            "learnings": ""
+        },
+        "category": "Back End"
+    },
+    {
+        "title": "Steel Sales Calculator",
+        "description": "O projeto é uma calculado para Vendedores e pessoas interessadas nos calculos de construção civil, onde as pessoas tendem a ter maior dificuldade de entendimento. O projeto também é para eu conhecer e aprender o básico bootstrap, além disso, praticar meus conhecimentos.",
+        "image_url": "/assets/img/projects/steel-sales-calculator.png",
+        "technologies": [
+            "React",
+            "Typescript",
+            "Bootstrap"
+        ],
+        "homepage": "https://steel-sales-calculator.vercel.app/",
+        "url_github": "https://github.com/LuisBarrichello/SteelSalesCalculator",
+        "featured": false,
+        "case_study": {
+            "problem": "",
+            "solution": "",
+            "learnings": ""
+        },
+        "category": "Front End"
+    },
+    {
+        "title": "FórumHub - API REST com Spring",
+        "description": "Este é o FórumHub, um projeto de API REST desenvolvido com Spring para gerenciar tópicos de discussão em um fórum. A API permite a criação, listagem, atualização e exclusão de tópicos, usuários, cursos e respostas, seguindo as melhores práticas do modelo REST.",
+        "image_url": "/assets/img/projects/api.png",
+        "technologies": [
+            "Java",
+            "MySQL",
+            "Spring Boot"
+        ],
+        "homepage": "",
+        "url_github": "https://github.com/LuisBarrichello/Challenge-API-REST-ForumHub",
+        "featured": false,
+        "case_study": {
+            "problem": "",
+            "solution": "",
+            "learnings": ""
+        },
+        "category": "Back End"
+    },
+    {
+        "title": "Best Browser Games",
+        "description": " É uma aplicação web desenvolvida em React, criada como uma comunidade online para avaliação e compartilhamento de experiências relacionadas a jogos de navegador (browser games).",
+        "image_url": "/assets/img/projects/best-browser-games.png",
+        "technologies": [
+            "React",
+            "JavaScript",
+            "CSS"
+        ],
+        "homepage": "https://best-browser-games-github-luisbarrichello.vercel.app/",
+        "url_github": "https://github.com/LuisBarrichello/BestBrowserGames",
+        "featured": false,
+        "case_study": {
+            "problem": "",
+            "solution": "",
+            "learnings": ""
+        },
+        "category": "Front End"
+    },
+    {
+        "title": "To-Do List",
+        "description": "O projeto To-Do List é uma aplicação web interativa que permite aos usuários fazer a gestão de suas tarefas. Desenvolvido como projeto final do curso de Front-End Dinâmico, esta aplicação oferece funcionalidades para cadastro de usuários, login, criação, edição e exclusão de tarefas, futuramente estarei implementando a visualização organizada das tarefas por prazos e prioridades.",
+        "image_url": "/assets/img/projects/todo-list.png",
+        "technologies": [
+            "HTML5",
+            "CSS3",
+            "JavaScript"
+        ],
+        "homepage": "https://task-master-cyan.vercel.app/login.html",
+        "url_github": "https://github.com/LuisBarrichello/ToDo-List?tab=readme-ov-file",
+        "featured": false,
+        "case_study": {
+            "problem": "",
+            "solution": "",
+            "learnings": ""
+        },
+        "category": "Front End"
+    },
+    {
+        "title": "Orbit Trips",
+        "description": "Este é um projeto de criação de um site HTML estático com a temática de venda de viagens intergaláticas. O objetivo deste projeto é oferecer uma plataforma simples onde os visitantes possam explorar e adquirir viagens fictícias para destinos além do nosso planeta.",
+        "image_url": "/assets/img/projects/orbit-trips.png",
+        "technologies": [
+            "HTML5",
+            "CSS3",
+            "Javascript"
+        ],
+        "homepage": "https://onerbreno.github.io/orbit-trips/",
+        "url_github": "https://github.com/onerbreno/orbit-trips",
+        "featured": false,
+        "case_study": {
+            "problem": "",
+            "solution": "",
+            "learnings": ""
+        },
+        "category": "Front End"
+    },
+    {
+        "title": "Landing page - página de contratações",
+        "description": "Projeto de uma Landing page destinada a novas contratações da empresa OptimusTech(fictícia).",
+        "image_url": "/assets/img/projects/pagina-contratacoes.png",
+        "technologies": [
+            "HTML5",
+            "CSS3"
+        ],
+        "homepage": "https://luisbarrichello.github.io/7DaysOfCode-pagina-contratacoes/",
+        "url_github": "https://github.com/LuisBarrichello/7DaysOfCode-pagina-contratacoes",
+        "featured": false,
+        "case_study": {
+            "problem": "",
+            "solution": "",
+            "learnings": ""
+        },
+        "category": "Front End"
+    },
+    {
+        "title": "Projetos #boraCodar da Rocketseat",
+        "description": "Projetos pequenos de front-end do #boraCodar da Rocketseat, como: pricing table, um kanban, tela de login, landing page, dashboard e muitos outros projetos.",
+        "image_url": "/assets/img/projects/boracodar.png",
+        "technologies": [
+            "HTML5",
+            "CSS3",
+            "JavaScript"
+        ],
+        "homepage": "",
+        "url_github": "https://github.com/LuisBarrichello/boracodar",
+        "featured": false,
+        "case_study": {
+            "problem": "",
+            "solution": "",
+            "learnings": ""
+        },
+        "category": "Front End"
+    }
+]
