@@ -1,0 +1,82 @@
+import IconDownload from '@/app/assets/icons/download-cloud.svg';
+import PhotoMe from '@/app/assets/img/me.png';
+import Button from '../common/Buttons/Button';
+import { aboutMeText } from '../../data/data';
+import SocialLinks from '../common/SocialLinks/SocialLinks';
+import Image from 'next/image';
+import CopyEmailButton from '../common/Buttons/CopyEmailButton';
+
+function AboutMe() {
+    return (
+        <>
+            <section
+                id="about-me"
+                className="bg-gray-50 dark:bg-dark-20 p-mobile md:p-tablet lg:p-desktop">
+                <div className="w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16 items-center">
+                    <div className="lg:col-span-2 flex justify-center">
+                        <div className="relative w-full max-w-xs sm:max-w-sm lg:max-w-md group">
+                            <div className="absolute aspect-square -inset-1 bg-gradient-to-bl from-brand-purple to-brand-blue rounded-xl blur-md opacity-50 group-hover:opacity-75 transition-opacity duration-300"></div>
+                            <Image
+                                src={PhotoMe}
+                                alt="Foto de perfil de Luís Gabriel Barrichello"
+                                className="relative w-full h-full object-cover rounded-xl shadow-lg group-hover:scale-105 transition-transform duration-300"
+                                priority
+                            />
+                        </div>
+                    </div>
+                    <div className="lg:col-span-3 text-center lg:text-left">
+                        <h2
+                            id="about-me-heading"
+                            className="font-poppins font-bold text-3xl md:text-4xl text-gray-900 dark:text-white">
+                            Sobre mim
+                        </h2>
+                        <address className="not-italic mt-2 text-lg font-medium text-gray-700 dark:text-gray-300 ">
+                            Laranjal Paulista, Brasil
+                        </address>
+                        <div className="mt-6 space-y-4 text-gray-600 dark:text-gray-400">
+                            {aboutMeText.map((entry) => (
+                                <p key={entry.id}>
+                                    {entry.parts.map((part, index) =>
+                                        typeof part === 'string' ? (
+                                            part
+                                        ) : part.bold ? (
+                                            <strong
+                                                key={index}
+                                                className="text-gray-900 dark:text-white font-semibold">
+                                                {part.text}
+                                            </strong>
+                                        ) : (
+                                            <span key={index}>{part.text}</span>
+                                        ),
+                                    )}
+                                </p>
+                            ))}
+                        </div>
+                        <div className="mt-8 flex justify-center lg:justify-start items-center gap-6">
+                            <SocialLinks />
+                        </div>
+
+                        <div className="mt-8 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+                            <Button
+                                className={''}
+                                variant={'red-purple'}
+                                content={'Download CV'}
+                                IconComponent={IconDownload}
+                                altImage={
+                                    'Icone indicando download do curriculo'
+                                }
+                                pathLink={'/curriculo.pdf'}
+                                target="_blank"
+                                download={true}
+                            />
+
+                            <CopyEmailButton />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </>
+    );
+}
+
+export default AboutMe;

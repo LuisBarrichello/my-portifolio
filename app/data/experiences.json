@@ -1,0 +1,58 @@
+[
+    {
+        "company": "Freelancer",
+        "role": "Desenvolvedor Web",
+        "period": "Dez 2024 – Presente",
+        "location": "Remoto",
+        "technologies": [
+            "React.js",
+            "TailwindCSS"
+        ],
+        "details": [
+            "Desenvolvi uma Landing Page para um nutricionista, utilizando React.js e Tailwind, focada em geração de leads e presença digital."
+        ]
+    },
+    {
+        "company": "Comercial Goldoni",
+        "role": "Auxiliar de PCP (com atuação em Desenvolvimento)",
+        "period": "Jul 2022 – Presente",
+        "location": "Presencial",
+        "technologies": [
+            "Java",
+            "JavaFX",
+            "Python",
+            "React.js",
+            "TypeScript",
+            "Bootstrap"
+        ],
+        "details": [
+            "Desenvolvi um web app para cálculo de peso de materiais de construção (React.js, TypeScript, Bootstrap), reduzindo em 40% o tempo gasto em cálculos manuais.",
+            "Criei um sistema desktop (Java, JavaFX) para otimizar o aproveitamento de sobras de materiais, reduzindo o desperdício.",
+            "Implementei uma automação em Python para impressão de documentos, que diminuiu o tempo gasto na atividade em 45%.",
+            "Automatizei planilhas do Excel com lógicas complexas, aumentando a produtividade da equipe em 20%.",
+            "Gerenciei indicadores de PCP, análise da capacidade de produção e controle de estoque de matéria-prima."
+        ]
+    },
+    {
+        "company": "Comercial Goldoni",
+        "role": "Vendedor",
+        "period": "Set 2021 – Mai 2022",
+        "location": "Presencial",
+        "technologies": [],
+        "details": [
+            "Responsável por todo o ciclo de vendas, desde o atendimento e orçamentação até o suporte pós-venda.",
+            "Desenvolvi uma abordagem consultiva para identificar as necessidades dos clientes e apresentar soluções de valor, resultando em maior fidelização."
+        ]
+    },
+    {
+        "company": "Comercial Goldoni",
+        "role": "Auxiliar de Faturamento",
+        "period": "Set 2020 – Set 2021",
+        "location": "Presencial",
+        "technologies": [],
+        "details": [
+            "Gerenciei a emissão de notas fiscais e a liberação de pedidos, garantindo a precisão e a conformidade dos processos.",
+            "Realizei o tratamento e a organização de documentos variados, otimizando o fluxo de trabalho administrativo."
+        ]
+    }
+]
