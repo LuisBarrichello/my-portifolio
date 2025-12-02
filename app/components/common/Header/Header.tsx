@@ -31,7 +31,7 @@ function Header() {
                         rel="noreferrer"
                         className="flex items-center gap-x-2 text-xl md:text-2xl font-extrabold">
                         <span className="font-poppins bg-gray-800 dark:bg-white text-white dark:text-gray-900 px-2 py-0.5 rounded-md">
-                            LGB
+                            LB
                         </span>
                         <span className="font-poppins text-gray-500 dark:text-gray-400">
                             .dev
