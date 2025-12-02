@@ -66,7 +66,7 @@ function AboutMe() {
                                     'Icone indicando download do curriculo'
                                 }
                                 pathLink={'/curriculo.pdf'}
-                                target={'target'}
+                                target="_blank"
                                 download={true}
                             />
 

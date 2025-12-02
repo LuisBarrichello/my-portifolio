@@ -15,8 +15,7 @@ function CTA() {
                         className="w-[400px] h-[400px] md:w-[800px] md:h-[800px] bg-brand-purple rounded-full filter blur-3xl opacity-30 dark:opacity-20 animate-pulse"
                         style={{ animationDuration: '5s' }}></div>
                     <div
-                        className="w-[300px] h-[300px] md:w-[700px] md:h-[700px]  bg-brand-blue/80
-                        0 absolute top-0 left-0 rounded-full filter blur-3xl opacity-30 dark:opacity-20 animate-pulse"
+                        className="w-[300px] h-[300px] md:w-[700px] md:h-[700px]  bg-brand-blue/80 absolute top-0 left-0 rounded-full filter blur-3xl opacity-30 dark:opacity-20 animate-pulse"
                         style={{
                             animationDuration: '5s',
                             animationDelay: '3s',

@@ -123,7 +123,7 @@ function Projects() {
                                 className={'load-more'}
                                 onClick={loadMoreProjects}
                                 content={'Carregar mais projetos'}
-                                alt={
+                                altImage={
                                     'botao idicando para carregar mais projetos'
                                 }></Button>
                         )}
@@ -135,7 +135,7 @@ function Projects() {
                                 className={'load-more'}
                                 onClick={unloadPreviousProjects}
                                 content={'Mostrar menos'}
-                                alt={
+                                altImage={
                                     'botao idicando para ocultar projetos'
                                 }></Button>
                         )}
