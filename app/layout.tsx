@@ -44,6 +44,9 @@ export const metadata: Metadata = {
     ],
     authors: [{ name: 'Luís Gabriel Barrichello', url: baseUrl }],
     creator: 'Luís Gabriel Barrichello',
+    verification: {
+        google: 'sE3yfnUZSGzLEFe2X3o4YpGhPg6y3SnfZh8L-EDXmEk',
+    },
     openGraph: {
         type: 'website',
         locale: 'pt_BR',
